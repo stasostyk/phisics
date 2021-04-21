@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Phisics</title>
-  </head>
-  <body>
-yo.
-  </body>
-</html>
+---
+title: index
+layout: default
+---
+  {% include banner.html %}
+  <div class="bouncingball">
+  </div>
+  <div class="container">
+    <hr style="margin-top: 4vw;">
+
+      <div class="row justify-content-around" style="margin-top: 100px;">
+        {% for topic in site.data.topics %}
+        <div class="col-2 cbox">
+          <a href="{{topic.link}}" style="text-decoration: none; color: black">
+            <i class="{{topic.icon}} icon"></i>
+            <h1>{{topic.name}}</h1>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+
+  </div>
