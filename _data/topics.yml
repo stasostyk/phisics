@@ -1,19 +1,19 @@
 - name: "Kinematics"
   icon: "fas fa-basketball-ball"
-  link: "#"
+  link: "/kinematics/"
 
 - name: "Dynamics"
   icon: "fas fa-jedi"
-  link: "#"
+  link: "/dynamics/"
 
 - name: "Thermo"
   icon: "fas fa-fire"
-  link: "#"
+  link: "/thermal/"
 
 - name: "Waves"
   icon: "fas fa-satellite-dish"
-  link: "#"
+  link: "/waves/"
 
 - name: "Huh?"
   icon: "fas fa-question"
-  link: "#"
+  link: "/about-us/"
