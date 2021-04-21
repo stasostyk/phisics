@@ -3,12 +3,17 @@ title: index
 layout: default
 ---
   {% include banner.html %}
+  <script>
+    $(document).ready(function() {
+      $('#delay1').delay(800).fadeIn(600);
+    });
+  </script>
   <div class="bouncingball">
   </div>
   <div class="container">
     <hr style="margin-top: 4vw;">
 
-      <div class="row justify-content-around" style="margin-top: 100px;">
+      <div class="row justify-content-around" id="delay1" style="display: none; margin-top: 100px;">
         {% for topic in site.data.topics %}
         <div class="col-2 cbox">
           <a href="{{topic.link}}" style="text-decoration: none; color: black">
