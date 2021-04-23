@@ -64,7 +64,7 @@ a.fill-div {
   background:black;
   animation: bounce linear 10s;
   animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate-reverse;
+  -webkit-animation-direction: alternate;
   position:relative;
   overflow: hidden;
   margin-left: 20vw;
@@ -74,9 +74,10 @@ a.fill-div {
 
 
 @keyframes bounce {
-	0% {top: 0;
-		-webkit-animation-timing-function: ease-in;
+	0% {
 	}
+  1% {top: 0;
+    -webkit-animation-timing-function: ease-in;}
 	8% {}
 	10% {top: 3.5vw;
 		height: 3vw;
@@ -156,9 +157,6 @@ a.fill-div {
     -webkit-animation-timing-function: ease-out;}
   99% {
     top: 0;
-    -webkit-animation-timing-function: ease-in;
-  }
-  99% {top: 0;
     -webkit-animation-timing-function: ease-in;
   }
   100% {
