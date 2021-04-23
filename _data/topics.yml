@@ -1,18 +1,18 @@
 - name: "Kinematics"
   icon: "fas fa-basketball-ball"
-  link: "phisics-org/kinematics/"
+  link: "kinematics/"
 
 - name: "Dynamics"
   icon: "fas fa-jedi"
-  link: "phisics-org/dynamics/"
+  link: "dynamics/"
 
 - name: "Thermo"
   icon: "fas fa-fire"
-  link: "phisics-org/thermal/"
+  link: "thermal/"
 
 - name: "Waves"
   icon: "fas fa-satellite-dish"
-  link: "phisics-org/waves/"
+  link: "waves/"
 
 - name: "Huh?"
   icon: "fas fa-question"
