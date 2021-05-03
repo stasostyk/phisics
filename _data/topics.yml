@@ -1,7 +1,7 @@
 - name: "Kinematics"
   icon: "fas fa-basketball-ball"
   link: "kinematics/"
-  color: "gray"
+  color: "black"
 
 - name: "Dynamics"
   icon: "fas fa-jedi"
