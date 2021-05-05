@@ -18,7 +18,12 @@
   link: "waves/"
   color: "black"
 
-- name: "Huh?"
+- name: "Contribute"
+  icon: "fas fa-heart"
+  link: "contribute/"
+  color: "black"
+
+- name: "About Us"
   icon: "fas fa-question"
   link: "about-us/"
   color: "black"
