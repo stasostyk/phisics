@@ -24,8 +24,8 @@ class Ball {
       this.vy *= -1;
     }
 
-    if (this.y+5 >= height) {
-      this.y = height-5;
+    if (this.y+5 >= 400) {
+      this.y = 400-5;
       this.vy *= -0.7;
 
       if (this.vy < 0 && this.vy > -this.g*5) {
