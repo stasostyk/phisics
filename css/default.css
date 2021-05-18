@@ -54,7 +54,17 @@ a.fill-div {
   filter: invert(100%) sepia(0%) saturate(1222%) hue-rotate(351deg) brightness(113%) contrast(106%);
 }
 
-
+.wave {
+  display:inline-block;
+  margin: 10px;
+  border-radius: 60px;
+  background-color:white;
+  border: 5px solid black;
+  color:black;
+  font-size: 1.8em;
+  padding: 10px 20px;
+  margin: 30px;
+}
 
 .bouncingball {
   width:3vw;

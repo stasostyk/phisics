@@ -6,12 +6,12 @@
 - name: "Dynamics"
   icon: "fas fa-jedi"
   link: "dynamics/"
-  color: "gray"
+  color: "black"
 
 - name: "Thermo"
   icon: "fas fa-fire"
   link: "thermal/"
-  color: "gray"
+  color: "black"
 
 - name: "Waves"
   icon: "fas fa-satellite-dish"
