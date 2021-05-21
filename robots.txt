@@ -1,0 +1,1 @@
+Sitemap: http://example.com/my_sitemap.xml
