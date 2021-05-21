@@ -23,7 +23,6 @@ email: s.ostyks@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Help teachers teach and learners learn the ways of physics.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  stasostyk
 
 # Build settings
@@ -50,6 +49,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
+url: "https://phisics.tech"
 gems:
   - jekyll-sitemap
