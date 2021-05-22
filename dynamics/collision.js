@@ -22,7 +22,7 @@ function setup() {
   cnvs = createCanvas(800, 400);
   cnvs.parent('cnvs');
   sel = createSelect();
-  sel.position(cnvs.position().x+30, cnvs.position().y+150);
+  sel.position(cnvs.position().x+120, cnvs.position().y+150);
   sel.option('perfectly elastic');
   sel.option('perfectly inelastic');
   sel.changed(changeType);
@@ -51,12 +51,38 @@ function draw() {
   background(255);
   noStroke();
   fill(0);
+  textSize(12);
+  text("Initial V  = " + v1slider.value(), 100, 25);
+  text("Initial V  = " + v2slider.value(), 100, 55);
+  text("Mass  = " + m1slider.value(), 100, 85);
+  text("Mass  = " + m2slider.value(), 100, 115);
 
-  text("Velocity 1 = " + v1slider.value(), 100, 25);
-  text("Velocity 2 = " + v2slider.value(), 100, 55);
-  text("Mass 1 = " + m1slider.value(), 100, 85);
-  text("Mass 2 = " + m2slider.value(), 100, 115);
+  text("Type of collision: ", 15, 170);
 
+  text("V  = " + block1.v*1000 + " m/s", 450, 75)
+  text("V  = " + block2.v*1000 + " m/s", 450, 105)
+
+  textSize(10);
+  text("1", 139, 29);
+  text("2", 139, 59);
+
+  text("1", 129, 89);
+  text("2", 129, 119);
+
+  text("1", 456, 79);
+  text("2", 457, 109);
+
+  text("-10m/s", 5, 37);
+  text("10m/s", 63, 37);
+
+  text("-10m/s", 5, 67);
+  text("10m/s", 63, 67);
+
+  text("1kg", 5, 97);
+  text("10kg", 63, 97);
+
+  text("1kg", 5, 127);
+  text("10kg", 63, 127);
 
   for (let i = 0; i < timeSteps; i++) {
 
