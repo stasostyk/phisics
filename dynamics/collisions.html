@@ -18,21 +18,18 @@ permalink: /dynamics/collisions/
 
 
   </head>
-  <body style="padding-bottom: 200px">
-{% include dropdown.html %}
+  <body style="padding-bottom: 200px;">
     <div class="container-fluid" style="text-align: center;">
-      <div class="row justify-content-center" style="margin-top: 50px; margin-bottom: 50px; text-align:center;">
 
-          <div class="col my-auto">
-            <a href="/"><img src="../../assets/logo.svg" alt="Logo" width="20%" class="logo"></a>
-          </div>
+      {% include logo.html %}
+      <div style="height: 300px;">
+
       </div>
-
       <div id="cnvs" style="display: block; margin: auto;">
       </div>
 
       <br>
-      <h2>Perfectly elastic & inelastic colliding objects simulation.</h2>
+      <h2><strong>Perfectly elastic & inelastic colliding objects simulation.</strong></h2>
       <br>
       <div class="row">
         <div class="offset-2 col-8">
@@ -46,9 +43,22 @@ permalink: /dynamics/collisions/
         However, inelastic collisions imply that some kinetic energy is lost and therefore the objects move together after the collision (second formula on the right).</h3></strong>
         </div>
           <div class="col-3 my-auto" style="text-align: center">
-            <strong><h3>m<sub>1</sub>v<sub>1<sub>i</sub></sub> + m<sub>2</sub>v<sub>2<sub>i</sub></sub> = m<sub>1</sub>v<sub>1<sub>f</sub></sub> + m<sub>2</sub>v<sub>2<sub>f</sub></sub></h3></strong>
-            <strong><h3>m<sub>1</sub>v<sub>1</sub> + m<sub>2</sub>v<sub>2</sub> = v<sub>f</sub>(m<sub>1</sub>+m<sub>2</sub>)</h3></strong>
+            <h3><strong>m<sub>1</sub>v<sub>1<sub>i</sub></sub> + m<sub>2</sub>v<sub>2<sub>i</sub></sub> = m<sub>1</sub>v<sub>1<sub>f</sub></sub> + m<sub>2</sub>v<sub>2<sub>f</sub></sub></strong></h3>
+            <h3><strong>m<sub>1</sub>v<sub>1</sub> + m<sub>2</sub>v<sub>2</sub> = v<sub>f</sub>(m<sub>1</sub>+m<sub>2</sub>)</strong></h3>
           </div>
+      </div>
+      <div class="row justify-content-center">
+        <img src="../../assets/collision.png" alt="COLLISION" style="width:50%">
+        <div class="col-5">
+          <h2><i>Perfectly Elastic Collisions</i></h2>
+          <h3>These collisions have conservantion of kinetic energy <strong>(KE = ½mv²)</strong>. Thus, when two objects collide,
+          both will bounce! Something important here is that two factors matter in collisions: mass and velocity. You can derive this
+        from momentum, which is calculated by <strong>P = mv</strong>. You can derive momentum from impulse, which is equivalent to momentum
+      and defined by <strong>P = FΔt</strong>. Both formulas result with units <strong>k<sub>g</sub>mv/s²</strong>.</h3>
+          <h2><i>Perfectly Inelastic Collisions</i></h2>
+          <h3>Almost the same thing happens with inelastic collisions, but the objects move <i>together</i> after the collision. Therefore,
+          the result expression is both masses multiplied by their joint velocity. </h3>
+        </div>
       </div>
 
     </div>

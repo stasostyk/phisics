@@ -74,11 +74,64 @@ a.fill-div {
   -webkit-text-fill-color: transparent;
   transform: scale(2.2);
 }
+/* 2 */
+.social-buttons2 {
+  display: inline-block;
+  opacity: 0;
+}
+.social-buttons2 a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 4px 0;
+}
+
+.social-buttons2 a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, black, black);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons2 a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons2 a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons2 a:hover i {
+  background: linear-gradient(45deg, black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
 
 .rcorners2 {
   border-radius: 25px;
   border: 2px solid black;
   padding: 20px;
+}
+
+.logo_svg {
+  border-radius: 25px;
+  border: 5px solid black;
+  padding: 20px;
+  background: white;
+}
+.logo_svg:hover {
+  filter: invert(100%);
 }
 
 #particles-js {

@@ -1,0 +1,109 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+  var scrolled = false;
+
+  $(document).ready(function(){
+
+    if ($(this).scrollTop() > 10) {
+      $(".logo_svg").hide();
+      $("#line1").hide();
+      $("#line2").hide();
+
+      $("#first").css({
+        position: "fixed",
+        left: "1rem",
+        top: "4rem",
+        display: "flex",
+        "flex-direction": "column",
+      });
+
+      $("#second").css({
+        position: "fixed",
+        right: "1rem",
+        top: "4rem",
+        display: "flex",
+        "flex-direction": "column",
+      });
+
+
+      scrolled=true;
+    }
+    $(".social-buttons2").css("opacity", '1');
+  });
+
+  $(window).scroll(function(){
+    var scrollPos = $(document).scrollTop();
+    if (scrollPos > 10 && !scrolled) {
+      $(".logo_svg").fadeOut(300);
+      $("#line1").fadeOut(300);
+      $("#line2").fadeOut(300);
+      scrolled = true;
+      $("#first").delay(250).queue(function(next) {
+        $(this).css({
+          position: "fixed",
+          left: "1rem",
+          top: "4rem",
+          display: "flex",
+          "flex-direction": "column",
+        });
+        next();
+      });
+
+      $("#second").delay(250).queue(function(next) {
+        $(this).css({
+          position: "fixed",
+          right: "1rem",
+          top: "4rem",
+          display: "flex",
+          "flex-direction": "column",
+        });
+        next();
+      });
+    } else if (scrollPos < 10 && scrolled) {
+      $(".logo_svg").fadeIn();
+      scrolled = false;
+      $("#line1").fadeIn();
+      $("#line2").fadeIn();
+      $("#first").css({
+        // color: "red"
+        display: "inline-block",
+        position: "",
+        left: "",
+        top: "",
+        "flex-direction": "",
+      });
+      $("#second").css({
+        // color: "red"
+        position: "",
+        right: "",
+        top: "",
+        display: "inline-block",
+        "flex-direction": "",
+      });
+    }
+  });
+</script>
+
+<div class="row justify-content-center" id="navbar" style="position: fixed; z-index:999; text-align: center">
+  <div class="col-4 my-auto">
+    <div class="social-buttons2" id="first">
+          <a href="/"><i class="fas fa-atom"></i></a>
+          <a href="/contribute"><i class="fas fa-heart"></i></a>
+          <a href="/about-us"><i class="fas fa-question"></i></a>
+    </div>
+    <hr id="line1" style="text-align:left; width: 100%; color: black; height: 5px; opacity: 1">
+  </div>
+    <div class="col-3 my-auto">
+      <a href="/"><img id="logo" src="/assets/logo.svg"style="margin-top: 50px; margin-bottom: 50px; text-align:center;" alt="Logo" width="100%" class="logo_svg"></a>
+    </div>
+    <div class="col-4 my-auto">
+      <div class="social-buttons2" id="second">
+        <a href="/kinematics"><i class="fas fa-basketball-ball"></i></a>
+        <a href="/dynamics"><i class="fas fa-jedi"></i></a>
+        <a href="/thermal"><i class="fas fa-fire"></i></a>
+        <a href="/waves"><i class="fas fa-satellite-dish"></i></a>
+      </div>
+      <hr id="line2" style="text-align:left; width: 100%; color: black; height: 5px; opacity: 1">
+    </div>
+</div>
