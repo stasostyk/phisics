@@ -15,11 +15,9 @@ layout: default
 
       <div class="row justify-content-around" id="delay1" style="display: none; margin-top: 100px;">
         {% for topic in site.data.topics %}
-        <div class="col-2 cbox">
-          <a href="{{topic.link}}" style="text-decoration: none; color: {{topic.color}}">
+        <div class="col-2 cbox" style="cursor: pointer;" onclick="window.location='{{topic.link}}';">
             <i class="{{topic.icon}} icon"></i>
             <h1>{{topic.name}}</h1>
-          </a>
         </div>
         {% endfor %}
       </div>
