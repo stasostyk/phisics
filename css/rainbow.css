@@ -1,0 +1,103 @@
+body {
+  color: white;
+  background: rgb(255,0,232);
+  background: radial-gradient(circle, rgba(255,0,232,1) 0%, rgba(98,0,255,1) 29%, rgba(0,52,205,1) 43%, rgba(57,25,219,1) 58%, rgba(24,150,210,1) 68%, rgba(18,228,208,1) 79%, rgba(0,255,68,1) 94%); }
+}
+
+a {
+  color: white;
+}
+
+hr {
+  color: white;
+}
+
+.toggle i {
+  color: white;
+}
+
+/* 2 */
+.social-buttons2 {
+  display: inline-block;
+  opacity: 0;
+}
+.social-buttons2 a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 4px 0;
+}
+
+.social-buttons2 a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, cyan, pink);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons2 a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons2 a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons2 a:hover i {
+  background: linear-gradient(45deg, cyan, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+.bouncingball {
+  width:3vw;
+  height:3vw;
+  border-radius:100%;
+  background:cyan;
+  animation: bounce linear 10s;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  position:relative;
+  overflow: hidden;
+  margin-left: 20vw;
+}
+
+.svg-color {
+  filter: invert(100%);
+}
+
+.logo_svg {
+  border-radius: 25px;
+  border: 5px solid black;
+  padding: 20px;
+  background: cyan;
+}
+.logo_svg:hover {
+  filter:
+    sepia(2)
+    hue-rotate(100deg)
+    saturate(4)
+    brightness(1);
+}
+
+.wave {
+  display:inline-block;
+  margin: 10px;
+  border-radius: 60px;
+  background-color:cyan;
+  border: 5px solid white;
+  font-size: 1.8em;
+  padding: 10px 20px;
+  margin: 30px;
+}

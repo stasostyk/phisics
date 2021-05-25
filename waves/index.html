@@ -16,7 +16,7 @@ permalink: /waves/
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101317900);</script>
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
-
+    {% include theme.html %}
   </head>
   <body>
     <div class="container-fluid" style="text-align: center;">
@@ -36,25 +36,25 @@ permalink: /waves/
 
       <div class="row justify-content-center">
         <div class="col-2 wave">
-          <a href="basics/" style="text-decoration: none; color: black">
+          <a href="basics/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none">
             <i style="font-size:50px" class="fas fa-school"></i>
             <h1 style="font-size: 2vw">Basics</h1>
           </a>
         </div>
         <div class="col-2 wave">
-          <a href="types/" style="text-decoration: none; color: black">
+          <a href="types/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none">
             <i style="font-size:50px" class="fas fa-check-double"></i>
             <h1 style="font-size: 2vw">Types</h1>
           </a>
         </div>
         <div class="col-2 wave">
-          <a href="tube/" style="text-decoration: none; color: black">
+          <a href="tube/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none">
             <i style="font-size:50px" class="fas fa-vials"></i>
             <h1 style="font-size: 2vw">Tube</h1>
           </a>
         </div>
         <div class="col-2 wave">
-          <a href="interference/" style="text-decoration: none; color: black">
+          <a href="interference/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none">
             <i style="font-size:50px" class="fas fa-wave-square"></i>
             <h1 style="font-size: 2vw">Interference</h1>
           </a>

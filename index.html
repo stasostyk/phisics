@@ -2,7 +2,9 @@
 title: index
 layout: default
 ---
+  {% include theme.html %}
   {% include banner.html %}
+  {% include toggle-theme.html %}
   <script>
     $(document).ready(function() {
       $('#delay1').delay(800).fadeIn(600);
@@ -15,7 +17,7 @@ layout: default
 
       <div class="row justify-content-around" id="delay1" style="display: none; margin-top: 100px;">
         {% for topic in site.data.topics %}
-        <div class="col-2 cbox" style="cursor: pointer;" onclick="window.location='{{topic.link}}';">
+        <div class="col-2 cbox" style="cursor: pointer;" onclick="window.location='{{topic.link}}'+'?theme='+theme;">
             <i class="{{topic.icon}} icon"></i>
             <h1>{{topic.name}}</h1>
         </div>

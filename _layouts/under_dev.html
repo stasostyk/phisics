@@ -7,10 +7,11 @@
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
     <link rel="stylesheet" href="../../css/default.css">
+        {% include theme.html %}
   </head>
   <body>
     <div style="margin-top: 20%; text-align: center;">
-      <a href="/" class="fas fa-user-ninja" style="font-size: 150px; text-decoration: none; color: black"></a>
+      <a href="/" class="fas fa-user-ninja" onclick="location.href=this.href+'?theme='+theme;return false;" style="font-size: 150px; text-decoration: none"></a>
       <h1>Oh no, you caught me while I was asleep! Time to finish making this page... come back soon :)</h1>
     </div>
   </body>

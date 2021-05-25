@@ -14,7 +14,7 @@ permalink: thermal/
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101317900);</script>
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
-
+{% include theme.html %}
   </head>
   <body>
     <div class="container-fluid" style="text-align: center;">
@@ -33,13 +33,13 @@ permalink: thermal/
 
       <div class="row justify-content-center">
         <div class="col-2 wave">
-          <a href="calorimetry/" style="text-decoration: none; color: gray">
+          <a href="calorimetry/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none; color: gray">
             <i style="font-size:50px" class="fas fa-mug-hot"></i>
             <h1 style="font-size: 2vw">Calorimetry</h1>
           </a>
         </div>
         <div class="col-2 wave">
-          <a href="ideal/" style="text-decoration: none; color: gray">
+          <a href="ideal/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none; color: gray">
             <i style="font-size:50px" class="fas fa-atom"></i>
             <h1 style="font-size: 2vw">Ideal Gas</h1>
           </a>

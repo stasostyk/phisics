@@ -1,7 +1,41 @@
-body {
-  /* background-color: rgb(10,10,10); */
+.toggle {
+  bottom: 60px;
+  right: 50px;
+  position: fixed;
+  font-size: 50px;
+
+  animation: rotating 5s linear;
+  animation-iteration-count: infinite;
 }
 
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.toggle i {
+  color: black;
+}
+
+
+#bottr {
+  bottom: 15px;
+  right:45px;
+  position: fixed;
+  font-size: 25px;
+}
 
 .banner {
   text-align:center;
@@ -134,6 +168,15 @@ a.fill-div {
   filter: invert(100%);
 }
 
+a {
+  color: black;
+}
+
+hr {
+  color: black;
+}
+
+
 #particles-js {
     /* stay in a constant spot on the page, regardless of scroll */
     position: fixed;
@@ -178,7 +221,9 @@ a.fill-div {
   margin-left: 20vw;
 }
 
-
+.wave a {
+  color:black;
+}
 
 
 @keyframes bounce {

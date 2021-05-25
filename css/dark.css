@@ -1,0 +1,116 @@
+body {
+  background: RGB(10,10,10);
+  color:white;
+}
+
+a {
+  color: white;
+}
+
+hr {
+  color: white;
+}
+
+.toggle i {
+  color: white;
+}
+
+
+.logo_svg {
+  border-radius: 25px;
+  border: 5px solid black;
+  filter: invert(100%);
+  padding: 20px;
+  background: transparent;
+}
+.logo_svg:hover {
+  filter: invert(100%);
+}
+
+/* 2 */
+.social-buttons2 {
+  display: inline-block;
+  opacity: 0;
+}
+.social-buttons2 a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 4px 0;
+}
+
+.cbox {
+  border-radius: 25px;
+  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  margin: 30px;
+}
+
+.social-buttons2 a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, white, white);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons2 a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons2 a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons2 a:hover i {
+  background: linear-gradient(45deg, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+.wave {
+  display:inline-block;
+  margin: 10px;
+  border-radius: 60px;
+  /* background-color:white; */
+  background: transparent;
+  color:white;
+  border: 5px solid white;
+  font-size: 1.8em;
+  padding: 10px 20px;
+  margin: 30px;
+}
+
+.wave a {
+  color:white;
+}
+
+.bouncingball {
+  width:3vw;
+  height:3vw;
+  border-radius:100%;
+  background:white;
+  animation: bounce linear 10s;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  position:relative;
+  overflow: hidden;
+  margin-left: 20vw;
+}
+
+.svg-color {
+  filter: invert(100%);
+}

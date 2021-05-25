@@ -17,7 +17,7 @@ permalink: dynamics/
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101317900);</script>
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
-
+{% include theme.html %}
   </head>
   <body>
     <div class="container-fluid" style="text-align: center;">
@@ -37,25 +37,25 @@ permalink: dynamics/
 
       <div class="row justify-content-center">
         <div class="col-2 wave">
-          <a href="incline/" style="text-decoration: none; color: black">
+          <a href="incline/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none;">
             <i style="font-size:50px" class="fas fa-ruler-combined"></i>
             <h1 style="font-size: 2vw">Inclined plains</h1>
           </a>
         </div>
         <div class="col-2 wave">
-          <a href="collisions/" style="text-decoration: none; color: black">
+          <a href="collisions/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none; ">
             <i style="font-size:50px" class="fas fa-compress-alt"></i>
             <h1 style="font-size: 2vw">Collisions</h1>
           </a>
         </div>
         <div class="col-2 wave">
-          <a href="pulleys/" style="text-decoration: none; color: black">
+          <a href="pulleys/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none; ">
             <i style="font-size:50px" class="fas fa-tram"></i>
             <h1 style="font-size: 2vw">Pulleys</h1>
           </a>
         </div>
         <div class="col-2 wave">
-          <a href="pi/" style="text-decoration: none; color: RGB(141, 107, 16)">
+          <a href="pi/" onclick="location.href=this.href+'?theme='+theme;return false;" style="text-decoration: none; color: RGB(141, 107, 16)">
             <i style="font-size:50px" class="fas fa-calculator"></i>
             <h1 style="font-size: 2vw">Calculate π</h1>
           </a>
