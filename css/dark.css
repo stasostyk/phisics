@@ -1,5 +1,5 @@
 body {
-  background: RGB(10,10,10);
+  background: #23272a;
   color:white;
 }
 
@@ -47,7 +47,7 @@ hr {
 
 .cbox {
   border-radius: 25px;
-  border: 2px solid white;
+  border: 2px solid #7289da;
   padding: 20px;
   text-align: center;
   width: 300px;
@@ -60,7 +60,7 @@ hr {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: linear-gradient(45deg, white, white);
+  background: linear-gradient(45deg, #7289da, #7289da);
   border-radius: 50%;
   z-index: -1;
   transition: 0.3s ease-in;
@@ -75,7 +75,7 @@ hr {
 }
 
 .social-buttons2 a:hover i {
-  background: linear-gradient(45deg, white, white);
+  background: linear-gradient(45deg, #7289da, #7289da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(2.2);
@@ -88,7 +88,7 @@ hr {
   /* background-color:white; */
   background: transparent;
   color:white;
-  border: 5px solid white;
+  border: 5px solid #7289da;
   font-size: 1.8em;
   padding: 10px 20px;
   margin: 30px;
@@ -102,7 +102,7 @@ hr {
   width:3vw;
   height:3vw;
   border-radius:100%;
-  background:white;
+  background:#7289da;
   animation: bounce linear 10s;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
