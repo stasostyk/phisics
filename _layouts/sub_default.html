@@ -31,8 +31,13 @@
     <script src=
         "../js/particles.js">
     </script>
-    <script src=
-        "../js/app.js">
+    <script>
+      var theme = location.search.split('theme=')[1] ? location.search.split('theme=')[1] : '0';
+
+      if (theme == "1" || theme == "2")
+        document.write('<script src="/js/dark.js"><\/script>');
+      else
+        document.write('<script src="/js/app.js"><\/script>');
     </script>
 
   </body>
