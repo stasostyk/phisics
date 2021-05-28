@@ -3,7 +3,7 @@
     console.log(event.clientX);
     console.log(event.clientY);
     if (event.clientX <= 5 && event.clientY <= 5) {
-      window.location = "/assets/robert.png";
+      document.getElementById('easter_egg').insertAdjacentHTML('beforeend', '<img style="text-align: center" src="/assets/robert.png" alt="ROBERT">');
     }
   }
 
