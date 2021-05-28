@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  function printMousePos(event) {
+    console.log(event.clientX);
+    console.log(event.clientY);
+    if (event.clientX <= 5 && event.clientY <= 5) {
+      window.location = "/assets/robert.png";
+    }
+  }
+
+  document.addEventListener("click", printMousePos);
+</script>
