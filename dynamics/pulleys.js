@@ -25,7 +25,10 @@ function draw() {
   m2 = m2s.value();
 
 
-  background(255);
+  if (Number(theme) >= 0 && Number(theme) <= 3)
+    background("#99aab5 ");
+  else
+    background(255);
 
   v += getAccel();
 

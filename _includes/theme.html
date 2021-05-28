@@ -1,9 +1,24 @@
 <script type="text/javascript">
-  var theme = location.search.split('theme=')[1] ? location.search.split('theme=')[1] : '0';
 
-  if (theme == "0")
+  var colors = ["#7289da", "#FF0080", "#ffa500", "#00ff00"];
+  var svgs = ["invert(55%) sepia(52%) saturate(471%) hue-rotate(190deg) brightness(89%) contrast(91%)",
+            "invert(13%) sepia(100%) saturate(3606%) hue-rotate(319deg) brightness(122%) contrast(115%)",
+            "invert(75%) sepia(47%) saturate(5031%) hue-rotate(360deg) brightness(107%) contrast(103%)",
+            "invert(39%) sepia(96%) saturate(1112%) hue-rotate(95deg) brightness(133%) contrast(122%)"];
+  var theme = location.search.split('theme=')[1] ? location.search.split('theme=')[1] : "-1";
+
+  if (theme == "-1")
+    window.location.href = window.location.href + "?theme=" + Math.floor(Math.random() * colors.length);
+
+  if (Number(theme) <= 3 && Number(theme) >= 0)
     document.write('<link rel="stylesheet" type="text/css" href="/css/dark.css" />');
-  else if (theme == "2")
+  else if (theme == "5")
     document.write('<link rel="stylesheet" type="text/css" href="/css/rainbow.css" />');
 
+  if (Number(theme) <= 3 && Number(theme) >= 0){
+    console.log(colors[Number(theme)]);
+
+    document.documentElement.style.setProperty('--theme-color', colors[Number(theme)]);
+    document.documentElement.style.setProperty('--theme-svg', svgs[Number(theme)]);
+  }
 </script>

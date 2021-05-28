@@ -28,7 +28,10 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  if (Number(theme) >= 0 && Number(theme) <= 3)
+    background("#99aab5 ");
+  else
+    background(255);
   if (grav.value() != g) {
     g = grav.value();
     x = initialX;

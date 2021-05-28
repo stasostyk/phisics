@@ -34,7 +34,10 @@ function draw() {
 
   let fric = getFf();
 
-  background(255);
+  if (Number(theme) >= 0 && Number(theme) <= 3)
+    background("#99aab5 ");
+  else
+    background(255);
 
 
   fill(200);
