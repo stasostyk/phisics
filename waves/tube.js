@@ -90,14 +90,14 @@ function draw() {
 
   fill(0);
   circle(200,200,100);
-  fill(255);
+  fill("#99aab5 ");
   rect(0,0,300,height/2);
-  fill(255);
+  fill("#99aab5 ");
   circle(200,200,80);
   fill(0);
   rect(90,100,70,100);
   rect(240,100,70,100);
-  fill(255);
+  fill("#99aab5 ");
   rect(100,100,50,100);
   rect(250,100,50,100);
   fill(0,0,255);
