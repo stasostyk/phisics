@@ -18,7 +18,10 @@ permalink: kinematics/
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101317900);</script>
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
-{% include theme.html %}
+
+    {% include theme.html %}
+    {% include mathjax.html %}
+
   </head>
   <body style="padding-bottom: 100px;">
     <div class="container-fluid" style="text-align: center;">
@@ -42,9 +45,7 @@ permalink: kinematics/
       <h4><strong>Kinematics in two dimensions. Click & drag to spawn.</strong></h4>
       <div class="row justify-content-center">
         <div class="col-6">
-          <h5>Realize how when you drag and slingshot the ball, you are giving it horizontal and vertical component vectors to its velocity.
-            The components will behave independently of each other until the ball hits the ground, meaning they share time and nothing else! To derive
-            the component vectors, simply imagine a triangle and use trigonometry. Hint: <i>h*cosθ</i> and <i>h*sinθ</i>.</h5>
+          <h5>Click on your mouse and drag before releasing to "slingshot" the ball across the screen. Realize how by doing so, you are initializing the component vectors of initial velocity which behave independently of each other (graphed below).</h5>
         </div>
       </div>
       <br>
@@ -54,12 +55,12 @@ permalink: kinematics/
           <h2><i class="fas fa-arrows-alt-v" style="padding-right: 20px; font-size: 40px;"></i><strong>Vertical motion</strong></h2>
           <hr style="height: 5px;">
           <h4 style="text-align: center; overflow:hidden; display: block">
-            <p style="text-align: left; ">Constant acceleration due to gravity:</p>
+            <p >Motion with constant acceleration has a correlation between position, time, velocity, and acceleration.</p>
             <strong>
-            <p>V<sub>f</sub> = V<sub>i</sub> + at</p>
-            <p>Δd = V<sub>i</sub>t + (1/2)at²</p>
-            <p>Δd = (V<sub>i</sub>+V<sub>f</sub>)/2</p>
-            <p>V<sub>f</sub>² = V<sub>i</sub>² + 2aΔd</p></i>
+            $$v_f = v_i +at$$
+            $$\Delta d = v_it + \frac{1}{2}at^2$$
+            $$\Delta d = \frac{v_i+v_f}{2}$$
+            $$v_f^2 = v_i^2+2a \Delta d$$
           </strong></h4>
         </div>
 
@@ -70,9 +71,9 @@ permalink: kinematics/
           <h2><i class="fas fa-arrows-alt-h" style="padding-right: 20px;  font-size: 40px;"></i><strong>Horizontal motion</strong></h2>
           <hr style="height: 5px;">
           <h4 style="text-align: center; overflow:hidden; display: block">
-            <p style="text-align: left; ">Constant velocity remains unchanged:</p>
+            <p>Motion with constant velocity (no acceleration) has a simple relationship between position, time, and velocity.</p>
             <strong>
-            <p>V = Δd/t</p>
+            $$v=\frac{\Delta d}{t}$$
           </strong></h4>
         </div>
       </div>

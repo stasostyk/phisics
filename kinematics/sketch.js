@@ -22,8 +22,8 @@ function setup() {
   g.position(cnvs.position().x+10,cnvs.position().y+ 10);
   g.style('width', '80px');
 
-  clearB = createButton("Clear");
-  clearB.position(cnvs.position().x+30, cnvs.position().y+40);
+  clearB = createButton("Reset Simulation");
+  clearB.position(cnvs.position().x+width-140, cnvs.position().y+height-40);
   clearB.mousePressed(clearBalls);
 }
 
@@ -50,7 +50,10 @@ function draw() {
   else
     background(255);
 
-  stroke(0);
+  if (Number(theme) >= 0 && Number(theme) <= 3)
+    stroke(colors[Number(theme)]);
+  else
+    stroke(0);
   noFill();
   strokeWeight(4);
   beginShape();
@@ -67,6 +70,7 @@ function draw() {
 
   line(450,500-g.value()*20,550,500-g.value()*20);
 
+  stroke(0);
   strokeWeight(2);
 
   line(50,450,50,550);
@@ -82,10 +86,21 @@ function draw() {
   rect(0,399,800,2)
 
   noStroke();
-  text("gravity", 100, 25);
-  text("Vx", 90, 450);
-  text("Vy", 290, 450);
-  text("a", 490, 450);
+  textSize(12);
+  text("x", 68,452);
+  text("y", 268,452);
+  text("y", 468,452);
+  text("1 m/s          9.8 m/s", 5,45);
+
+  textSize(15);
+  text("Gravitational Constant", 105, 27);
+  text("V", 60, 450);
+  text("V", 260, 450);
+  text("a", 460, 450);
+
+  text("t", 155, 500);
+  text("t", 355, 500);
+  text("t", 555, 500);
 
   if (isSpawning) {
     text("y=ViT+0.5*at^2", spawnX, spawnY-10);
@@ -106,7 +121,11 @@ function draw() {
     circle(predictions[i][0], predictions[i][1], 5);
   }
 
-  fill(0,0,255);
+  if (Number(theme) >= 0 && Number(theme) <= 3)
+    fill(colors[Number(theme)]);
+  else
+    fill(0,0,255);
+
   stroke(0);
 
   for (let i = 0; i < balls.length; i++) {
