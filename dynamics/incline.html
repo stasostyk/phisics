@@ -19,7 +19,8 @@ permalink: /dynamics/incline/
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
 
-{% include theme.html %}
+    {% include theme.html %}
+    {% include mathjax.html %}
   </head>
   <body style="padding-bottom: 200px">
     <div class="container-fluid" style="text-align: center;">
@@ -32,24 +33,43 @@ permalink: /dynamics/incline/
       </div>
 
       <br>
-      <h2>Object on an inclined plane (Note: kinetic energy is not conserved when changing values)</h2>
+      <h2>Object on an Inclined Plane Simulation</h2>
       <br>
       <div class="row">
         <div class="offset-2 col-8">
-          <hr style="height:5px; color: black; justify-content: center; opacity: 0.9">
+          <hr style="height:5px;  justify-content: center; opacity: 0.9">
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-4">
-          <strong><h3>Objects on inclined planes follow basic Newtonian dynamics, with the extra step of trigonometry.
-          As labelled in the simulation, it is recommended to find the forces acting on the object relative to the
-        inclined plane. Then the process becomes much simpler, and the formulas boil down to:</h3></strong>
+          <strong><h3>Objects on inclined planes have component vectors which are altered by the angle of elevation. Hence, we modify $$F_{net}=ma$$ into the following subset of equations in order to model the new forces acting on the object.</h3></strong>
         </div>
           <div class="col-3 my-auto" style="text-align: center">
-            <strong><h3>F<sub>net<sub>x</sub></sub> = ma<sub>x</sub></h3></strong>
-            <strong><h3>F<sub>a</sub> + F<sub>g<sub>x</sub></sub> - F<sub>f</sub> = ma<sub>x</sub></h3></strong>
-            <strong><h3>F<sub>a</sub> + mg<i>sin</i>θ - μmg<i>cos</i>θ = ma<sub>x</sub></h3></strong>
-          </div>
+            <h4>
+
+              $$F_{net_x} = ma_x$$
+              $$F_a+F_{g_x} - F_f = ma_x$$
+              $$F_a + mg \sin \theta - \mu mg \cos \theta = ma_x$$
+              F<sub>a</sub> is force applied, F<sub>g</sub> is weight, F<sub>f</sub> is friction force.
+            </h4>
+            </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-4 my-auto">
+          <h4>
+            $$\tan \theta = {\mu}_{static}$$
+          </h4>
+        </div>
+        <div class="col-4 my-auto">
+          <h2>When does the object begin to move?</h2>
+          <hr style="height:5px;  justify-content: center; opacity: 0.6">
+          <h4>As you may have noticed, there is an angle at which the object begins to move which is independent from its mass. This is known as the
+          critical angle, which we can find using the formula on the right.</h4>
+        </div>
       </div>
 
     </div>

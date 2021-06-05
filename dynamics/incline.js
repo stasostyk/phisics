@@ -1,20 +1,21 @@
 let Fa = 0;
 let g = 0.5;
 let muK = 0.2;
-let muS = 0.4;
+let muS = muK*2;
 let mass;
 let angle;
+let coef;
 
-let x = 0;
+let x = 300;
 let v = 0;
 
 let ang = 0;
 let m = 10;
 
-let w = 50;
+let w = m*5;
 
 function setup() {
-  cnvs = createCanvas(400, 400);
+  cnvs = createCanvas(800, 500);
   cnvs.parent('cnvs');
 
   rectMode(CENTER);
@@ -26,6 +27,10 @@ function setup() {
   mass = createSlider(5,20,10, 1);
   mass.position(cnvs.position().x+10,cnvs.position().y+40);
   mass.style('width', '80px');
+
+  coef = createSlider(1,4,2,0.1);
+  coef.position(cnvs.position().x+10,cnvs.position().y+70);
+  coef.style('width', '80px');
 }
 
 function draw() {
@@ -39,6 +44,9 @@ function draw() {
   else
     background(255);
 
+  w = m*5;
+  muK = round(coef.value())/10;
+  muS = muK*2;
 
   fill(200);
   triangle(0, height-width*tan(ang), 0,height, width, height);
@@ -65,10 +73,13 @@ function draw() {
   pop();
 
 //   Arrows
-
-  text("angle: " + round(ang*100)/100 + " rad",110,25);
-  text("mass: " + m + " kg",110,55);
-
+  push();
+  textSize(18);
+  fill(0);
+  text("Angle: " + round(ang*(180/PI)*100)/100 + "°",110,25);
+  text("Mass: " + m + " kg",110,55);
+  text("µ kinetic: " + muK + ", µ static: " + muS,110,85);
+  pop();
   let acc = getAccel();
   v+=acc;
   if (acc === 0)
@@ -99,6 +110,10 @@ function drawArrow(base, vec, myColor) {
   stroke(myColor);
   strokeWeight(3);
   fill(myColor);
+  if (Number(theme) >= 0 && Number(theme) <= 3) {
+    stroke(colors[Number(theme)]);
+    fill(colors[Number(theme)]);
+  }
   translate(base.x, base.y);
   line(0, 0, vec.x, vec.y);
   rotate(vec.heading());
