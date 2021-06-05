@@ -13,12 +13,15 @@ layout: default
       $('#delay1').delay(800).fadeIn(600);
     });
   </script>
-  <div class="bouncingball">
+  <div style="height:0">
+    <div class="bouncingball">
+    </div>
+
   </div>
   <div class="container">
-    <hr style="margin-top: 4vw;">
+    <hr style="margin-top: 6.5vw;">
 
-      <div class="row justify-content-around" id="delay1" style="display: none; margin-top: 100px;">
+      <div class="row justify-content-around" id="delay1" style="display: none; ">
         {% for topic in site.data.topics %}
         <div class="col-2 cbox" style="cursor: pointer;" onclick="window.location='{{topic.link}}'+'?theme='+theme;return false;">
             <i class="{{topic.icon}} icon"></i>
