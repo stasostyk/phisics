@@ -18,6 +18,7 @@ permalink: /waves/basics/
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
 
     {% include theme.html %}
+    {% include mathjax.html %}
   </head>
   <body style="padding-bottom: 200px">
     <div class="container-fluid" style="text-align: center;">
@@ -26,58 +27,77 @@ permalink: /waves/basics/
 
       </div>
       <div class="row justify-content-center">
+        <div class="col-6">
+        </div>
       </div>
       <br>
-      <hr style="width:70vw; height:5px; color: black; margin-left:15vw">
       <br>
       <div class="row justify-content-around">
-        <div class="col-5">
-          <h1>Graphing waves</h1>
-          <h3 style="text-align: left">Waves are sinusoidal functions, meaning they can be either expressed with cosine or sine graphs.
-          The amplitude of a wave is its maximum displacement (notation: x<sub>0</sub>). The period is the time it takes for the wave to repeat.</h3>
+        <div class="col-5" style="text-align:center">
+          <h1>Understanding the Basics of Waves</h1>
+          <h3 style="">At its core, a wave is a disturbance that transmits energy. A single disturbance is a pulse, while a series of periodic
+          pulses is a wave.</h3>
+          <br>
+          <br>
+          <h1>Modelling their motion</h1>
+          <h3>Waves travel in sinusoidal motion, meaning they can be expressed by cosine. This is because waves cause particles to move in the opposite direction to which
+          they are accelerating, $$ \Delta x \propto -a$$</h3>
 
-          <h4 style="text-align: center; overflow:hidden; display: block">
-            <strong>
-              <p>x = x<sub>0</sub>cos(ωt)</p>
-              <p>ω = 2πf</p>
-              <p>ω² = k/m</p>
-              <p>T = 1/f</p>
-              <p>f = 1/T</p>
-
-          </strong></h4>
         </div>
-        <div class="col-5">
+        <div class="col-5 my-auto">
           <div id="calculator" style="width: 600px; height: 400px;"></div>
+
         </div>
       </div>
       <br>
-      <hr style="width:70vw; height:5px; color: black; margin-left:15vw">
+      <hr style="height:5px;opacity: 0.9">
       <br>
-      <div class="row justify-content-around">
-        <div class="col-5">
-          <h1>Further understanding</h1>
-          <h3 style="text-align: left">Several realizations appear from this phenomenon. Firstly, acceleration is always proportional to
-          negative displacement. Given that, an oscillating object has maximum acceleration at the crest and trough, while velocity is maximum
-          at the point of equilibrium (x = 0). Here are some formulas that describe this behaviour.</h3>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <h1>Defining Variables</h1>
+          <h4>
+            $$\omega \text{ is the speed of the wave in } \frac{rad}{s}$$
+            $$x_0 \text{ is the initial displacement and amplitude in } m$$
+            $$k \text{ is the spring constant in } \frac{N}{m}$$
+            $$T \text{ is the time between the period of the wave}$$
+            $$f \text{ is the frequency between time intervals } T \text{ in Hertz (Hz)}$$
+          </h4>
         </div>
-        <div class="col-2 my-auto">
-          <h4 style="text-align: center; overflow:hidden; display: block">
-            <strong>
-              <p>a = -ω²x</p>
-              <p>a<sub>max</sub> = -ω²x<sub>0</sub></p>
-              <p>v<sub>max</sub> = x<sub>0</sub>ω</p>
-
-          </strong></h4>
+        <div class="col-4">
+          <h1>Deriving Formulas</h1>
+          <h4 style="margin-top: 50px; margin-right: 20%">
+            $$\Delta x = x_0 \cos (\omega t)$$
+            $$\omega = 2 \pi f$$
+            $${\omega}^2 = \frac{k}{m}$$
+            $$T = \frac{1}{f} \rightarrow f = \frac{1}{T}$$
+          </h4>
+        </div>
+      </div>
+      <br>
+      <hr style="width:70vw; height:5px;  margin-left:15vw">
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <h1>Further understanding</h1>
+          <h3>Applying calculus to the previous equations as well as prior concepts such as energy, we can derive a whole lot more
+          functions to model the nature of waves.</h3>
         </div>
         <div class="col-3 my-auto">
           <h4 style="text-align: center; overflow:hidden; display: block">
-            <strong>
-              <p>v(t) = -x<sub>0</sub>ωsin(ωt)</p>
-              <p>a(t) = x<sub>0</sub>cos(ωt)</p>
-              <p>KE(t) = (1/2)mx<sub>0</sub>²ω²sin(ωt)</p>
-              <p>PE<sub>el</sub>(t) = (1/2)kx<sub>0</sub>²cos²(ωt)</p>
+            $$a = -{\omega}^2x$$
+            $$a_{max} = -{\omega}x_0$$
+            $$v_{max} = \omega x_0$$
+          </h4>
+        </div>
+        <div class="col-3 my-auto">
+          <h4 style="text-align: center; overflow:hidden; display: block">
 
-          </strong></h4>
+            $$v(t) = -x_0 \omega \sin (\omega t)$$
+            $$a(t) = x_0 \cos (\omega t)$$
+            $$KE(t) = \frac{1}{2}mx_0^2 {\omega}^2 \sin (\omega t)$$
+            $${PE}_{elastic}(t) = \frac{1}{2}kx_0^2 {\cos}^2 (\omega t)$$
+
+            </h4>
         </div>
       </div>
 
