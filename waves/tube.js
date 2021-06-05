@@ -25,6 +25,9 @@ function setup() {
 
   initialX = 30;
   x=initialX;
+
+  calculator.setExpression({ id: 'w', latex: 'w='+round(2*g*100/(l/25))/10});
+  calculator.setExpression({ id: 'a', latex: 'a='+initialX/10});
 }
 
 function draw() {
@@ -34,6 +37,7 @@ function draw() {
     background(255);
   if (grav.value() != g) {
     g = grav.value();
+    calculator.setExpression({ id: 'w', latex: 'w='+round(2*g*100/(l/25))/10});
     x = initialX;
     v = 0;
   }
@@ -41,6 +45,7 @@ function draw() {
   if (disp.value() != initialX) {
     x = disp.value();
     initialX = disp.value();
+    calculator.setExpression({ id: 'a', latex: 'a='+initialX/10});
     print(disp.value());
     v=0;
   }
@@ -107,13 +112,7 @@ function draw() {
   stroke(0);
   fill(0);
   strokeWeight(5);
-  line(400,100, 400, 190);
-  line(400,210, 400, 300);
-  triangle(395,100,405,100,400,95);
-  triangle(395,300,405,300,400,305);
   strokeWeight(1);
-  text("Fl = "+Math.round(getAccel(x)*-100)+" N", 415,100);
-  text("Fr = "+Math.round(getAccel(x)*100)+" N", 415, 300);
   text("x", 580, 100);
   text("v", 580, 200);
   text("a", 580, 300);
