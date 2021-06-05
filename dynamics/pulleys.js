@@ -18,6 +18,8 @@ function setup() {
 
   m1s.style('width', '80px');
   m2s.style('width', '80px');
+
+  textSize(15);
 }
 
 function draw() {
@@ -48,8 +50,9 @@ function draw() {
 
   fill(0);
 
-  text("m1 = " + m1 + " kg", 15, 50);
-  text("m2 = " + m2 + " kg", 15, 110);
+  text("m = " + m1 + " kg", 15, 50);
+  text("M = " + m2 + " kg", 15, 110);
+
 
   push();
   translate(115, 300+x);
@@ -61,6 +64,8 @@ function draw() {
   }
   if (x >= 230)
     PE = 0;
+  stroke(0);
+  strokeWeight(1);
   text("KE = " + KE + " J", -65, 50);
   text("PE = " + PE + " J", -70, 80);
   pop();
@@ -74,6 +79,11 @@ function draw() {
   rect(100, 320+x, 50);
   rect(250, 320-x, 50);
 
+  push();
+  fill(255);
+  text("m", 120, 350+x);
+  text("M", 270, 350-x);
+  pop();
 }
 
 function getAccel() {

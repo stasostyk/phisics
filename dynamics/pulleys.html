@@ -17,7 +17,10 @@ permalink: /dynamics/pulleys/
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101317900);</script>
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
-{% include theme.html %}
+
+
+    {% include theme.html %}
+    {% include mathjax.html %}
   </head>
   <body>
     <div class="container-fluid" style="text-align: center;">
@@ -27,29 +30,36 @@ permalink: /dynamics/pulleys/
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-4">
+        <div class="col-6">
           <div id="cnvs" style="display: block; margin: auto;"> </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-3">
           <h1>The Pulley Machine</h1>
-          <hr style="height: 5px; color: black">
+          <hr style="height: 5px; opacity: 0.9">
           <h3>Two weights of varying masses are attached to the same string, separated by a frictionless disk.
           With this setup, you can examine tension forces, potential energy and kinetic energy.</h3>
+          <br>
+          <br>
+          <br>
+          <h3>
+            The pulley problem illustrates a correlation between a shared tension force and acceleration, seen through
+            $$F_{tension} = mg + ma$$
+            $$F_{tension} = Mg - Ma$$
+            $$\therefore a = \frac{g(m-M)}{m+M}$$
+          </h3>
         </div>
       </div>
-      <hr style="height: 5px; color: black">
+      <hr style="height: 5px;">
       <br>
 
       <div class="row justify-content-around">
         <div class="col-4 my-auto">
           <h1>George Atwood</h1>
+          <hr style="height: 5px; opacity: 0.9">
           <h3>A system like this is called an Atwood's machine and was invented by George Atwood in 1784 as a laboratory experiment to verify the mechanical laws of motion with constant acceleration.</h3>
 
-          <strong>
-            <h3>T = m<sub>g</sub> + m<sub>a</sub></h3>
-            <h3>T = M<sub>g</sub> - M<sub>a</sub></h3>
-          </strong>
+
         </div>
         <div class="col-5">
           <img src="../../assets/atwood.png" style="width: 100%; height: 100%" alt="[George Atwood]" class="svg-color">
