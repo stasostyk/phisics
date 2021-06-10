@@ -1,2 +1,19 @@
-- formula: "F=ma"
-  note: "This is one such formula"
+- f: v = \frac{d}{\Delta t}
+  n:  Most basic equation for velocity. Works if no acceleration/ constant velocity.
+
+- f:  v_f = v_i +at
+  n:  Find final velocity given initial velocity, acceleration, and time. Initial velocity is 0 if starting from rest.
+
+- f:  \Delta d = v_it + \frac{1}{2}at^2
+  n:  Realy just a parabola of position versus time. Set it equal to zero and apply the quadratic formula to solve for time. If solving for time after jumping off a cliff, 'd' is height of cliff. 
+
+- f:  t=\frac{-V_i \pm \sqrt{V_i^2+2a \Delta d}}{at}
+  n:  Finding roots of previous equation, gives you time before hitting the ground of a projectile.
+
+- f:  \Delta d = \frac{v_i+v_f}{2}
+  n:  Find distance travelled.
+
+- f:  t=\sqrt{\frac{2 \Delta d}{a}}
+  n:  If initial velocity is zero, easy way to solve for time.
+- f:  v_f^2 = v_i^2+2a \Delta d
+  n:  No time, cube proportionality between both velocities and acceleration.
