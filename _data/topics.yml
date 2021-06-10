@@ -27,3 +27,8 @@
   icon: "fas fa-question"
   link: "about-us/"
   color: "black"
+
+- name: "IB Cheatsheet"
+  icon: "fas fa-user-graduate"
+  link: "cheatsheet/"
+  color: "black"

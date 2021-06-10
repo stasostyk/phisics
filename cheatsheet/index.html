@@ -1,0 +1,53 @@
+---
+permalink: /cheatsheet/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IB Physics Annotated Formula Booklet/ Cheatsheet by Phisics</title>
+    <meta name="description" content="The internet's best annotated IB formula booklet for IB Physics to serve as a cheatsheet and quick reference guide for when you need it the most.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/default.css">
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/38cfdf5413.js" crossorigin="anonymous"></script>
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101317900);</script>
+    <script async src="//static.getclicky.com/js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
+
+    {% include theme.html %}
+    {% include mathjax.html %}
+  </head>
+  <body>
+    <div class="container-fluid" style="text-align: center;">
+      {% include logo.html %}
+      <div style="height: 300px;">
+
+      </div>
+
+      <h1>Unit 1: Kinematics</h1>
+      <hr style="height:5px; opacity: 1; width:70%; margin-left: 15%">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <table class="table table-hover table-bordered table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Formula</th>
+                <th scope="col">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in site.data.unit1 %}
+              <tr>
+                <td>$${{item.formula}}$$</td>
+                <td>{{item.note}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
