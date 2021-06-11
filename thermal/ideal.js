@@ -78,7 +78,7 @@ function draw() {
   text("# of molecules", 240, 75);
   text("Temperature [K]", 240, 125);
   textSize(11);
-  text("0                 9.8", 155, 45);
+  text("1                 9.8", 155, 45);
   text("1                 100", 155, 95);
   text("1000              2000", 155, 145);
   pop();
