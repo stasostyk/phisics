@@ -9,9 +9,11 @@ let t = 1500;
 
 let gslider;
 let mslider;
-let tslider;
 
-let pres = (numMol* 8.3144598*t)/(depth*w*h);
+// let pres = (numMol* 8.3144598*t)/(depth*w*h);
+let pres = 1/(depth*w);
+
+let temp = (pres*depth*w*h)/(numMol*8.3144598);
 
 let weight = 0;
 let new_weight = 0;
@@ -20,7 +22,7 @@ function setup() {
   cnvs = createCanvas(500, 700);
   cnvs.parent('cnvs')
 
-  gslider = createSlider(1, 9.8, 9.8, 0.1);
+  gslider = createSlider(0, 2, 1, 0.1);
   gslider.position(cnvs.position().x+150,cnvs.position().y+ 10);
   gslider.style('width', '80px');
 
@@ -28,9 +30,6 @@ function setup() {
   mslider.position(cnvs.position().x+150,cnvs.position().y+ 60);
   mslider.style('width', '80px');
 
-  tslider = createSlider(1000, 2000, 1500,100);
-  tslider.position(cnvs.position().x+150,cnvs.position().y+ 110);
-  tslider.style('width', '80px');
 }
 
 function draw() {
@@ -67,20 +66,21 @@ function draw() {
   fill(0);
   textSize(15);
   text("P ≈ " + round(pres*1000)/1000 + " Pa", 10, 20);
-  text("Δy ≈ " + round(h*1000)/1000 + " m", 10, 40);
-  text("V ≈ " + round(h*depth*w*1000)/1000 + " m^3", 10, 60);
+  text("Δy ≈ " + (300 - round(h*1000)/1000) + " m", 10, 40);
+  text("V ≈ " + round(h*depth*w*1000)/1000 + " m", 10, 60);
   text("m ≈ " + weight + " kg", 10, 80);
-  text("Fg ≈ " + round(weight*g*1000)/1000 + " N", 10, 100);
+  text("F ≈ " + round(1 + weight*g*1000)/1000 + " N", 10, 100);
+  text("T ≈ " + round(temp*1000)/1000 + " K", 10, 120);
 
   text("Click here to spawn", 180, 210);
 
-  text("g [m/s^2]", 240, 25);
+  text("g [m/s  ]", 240, 25);
   text("# of molecules", 240, 75);
-  text("Temperature [K]", 240, 125);
   textSize(11);
-  text("1                 9.8", 155, 45);
+  text("0                 2", 155, 45);
   text("1                 100", 155, 95);
-  text("1000              2000", 155, 145);
+  text("3", 92, 55);
+  text("2", 282, 20);
   pop();
 
   update();
@@ -95,15 +95,11 @@ function update() {
     numMol = mslider.value();
     reset();
   }
-  if (tslider.value() != t) {
-    t = tslider.value();
-    reset();
-  }
 
   if (weight != new_weight) {
-    let new_pres = pres + ((new_weight * g) / (depth*w));
-    new_h = pres*h/new_pres;
-    pres = new_pres;
+    new_h = h*(1+weight*g)/(1+new_weight*g);
+
+    pres = (1+new_weight*g)/(w*depth);
     weight = new_weight;
   }
 
@@ -139,7 +135,8 @@ function reset() {
   balls = [];
   h = 300;
   new_h = 300;
-  pres = (numMol* 8.3144598*t)/(depth*w*h);
+  pres = 1/(depth*w);
   weight = 0;
   new_weight = 0;
+  temp = (pres*depth*w*h)/(numMol*8.3144598);
 }
