@@ -1,19 +1,21 @@
-let numMol = 50;
+let numMol = 20;
 let balls = [];
-let g = 9.8;
+let g = 5;
 let w = 10;
 let depth = 10;
 let h = 300;
 let new_h = 300;
-let t = 1500;
+let t = 50;
+let r = 8.3144598;
 
 let gslider;
 let mslider;
+let tslider;
 
 // let pres = (numMol* 8.3144598*t)/(depth*w*h);
-let pres = 1/(depth*w);
+let pres = (numMol*r*t)/(w*depth*h);
 
-let temp = (pres*depth*w*h)/(numMol*8.3144598);
+// let temp = (pres*depth*w*h)/(numMol*8.3144598);
 
 let weight = 0;
 let new_weight = 0;
@@ -22,13 +24,17 @@ function setup() {
   cnvs = createCanvas(500, 700);
   cnvs.parent('cnvs')
 
-  gslider = createSlider(0, 2, 1, 0.1);
+  gslider = createSlider(0, 9.8, 5);
   gslider.position(cnvs.position().x+150,cnvs.position().y+ 10);
   gslider.style('width', '80px');
 
-  mslider = createSlider(1, 100, 50);
+  mslider = createSlider(1, 30, 10);
   mslider.position(cnvs.position().x+150,cnvs.position().y+ 60);
   mslider.style('width', '80px');
+
+  tslider = createSlider(5, 20, 10);
+  tslider.position(cnvs.position().x+150,cnvs.position().y+ 110);
+  tslider.style('width', '80px');
 
 }
 
@@ -70,7 +76,7 @@ function draw() {
   text("V ≈ " + round(h*depth*w*1000)/1000 + " m", 10, 60);
   text("m ≈ " + weight + " kg", 10, 80);
   text("F ≈ " + round(1 + weight*g*1000)/1000 + " N", 10, 100);
-  text("T ≈ " + round(temp*1000)/1000 + " K", 10, 120);
+  text("T ≈ " + round(t*1000)/1000 + " K", 10, 120);
 
   text("Click here to spawn", 180, 210);
 
@@ -95,11 +101,15 @@ function update() {
     numMol = mslider.value();
     reset();
   }
+  if (tslider.value() != t) {
+    t = tslider.value();
+    reset();
+  }
 
   if (weight != new_weight) {
-    new_h = h*(1+weight*g)/(1+new_weight*g);
+    new_h = (numMol*r*t)/(new_weight*g);
 
-    pres = (1+new_weight*g)/(w*depth);
+    pres = (new_weight*g)/(w*depth);
     weight = new_weight;
   }
 
@@ -135,8 +145,7 @@ function reset() {
   balls = [];
   h = 300;
   new_h = 300;
-  pres = 1/(depth*w);
+  pres = (numMol*r*t)/(w*depth*h);
   weight = 0;
   new_weight = 0;
-  temp = (pres*depth*w*h)/(numMol*8.3144598);
 }
