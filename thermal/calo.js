@@ -54,7 +54,10 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  if (Number(theme) >= 0 && Number(theme) <= 3)
+    background("#99aab5 ");
+  else
+    background(255);
 
   fill(0);
   rect(100, height, 5, -130);
