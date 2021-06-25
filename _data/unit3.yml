@@ -1,0 +1,29 @@
+- f: Q = mc \Delta T
+  n: Energy, or heat, in a medium of set mass.
+
+- f: Q_{latent} = mL
+  n: Latent heat of an object as it goes through phase changes.
+
+- f: Q_1 = -Q_2
+  n: Heat gained by one object is lost by the other object.
+
+- f: PV=nRT
+  n: Relationship between pressure, volume, and temperature in an ideal gas.
+
+- f: PV = NK_BT
+  n: Same as previous formula but using Boltzman's constant.
+
+- f: \frac{P_1V_1}{T_1}=\frac{P_2V_2}{T_2}
+  n: Derivation of what happens to a a set object when it changes pressure, temperature, or volume.
+
+- f: P=\frac{F}{A}
+  n: Formula for pressure acting on a given surface.
+
+- f: PV = \frac{N}{3}mv^2
+  n: Theoretical equation of an ideal gas.
+
+- f: KE = \frac{3}{2}K_BT
+  n: Average kinetic energy of molecules in an ideal gas.
+
+- f: v = \sqrt{\frac{3K_BT}{m}}
+  n: Mean value of speed of molecules in an ideal gas.

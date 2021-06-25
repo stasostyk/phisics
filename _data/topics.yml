@@ -4,7 +4,7 @@
   color: "black"
 
 - name: "Dynamics"
-  icon: "fas fa-jedi"
+  icon: "fas fa-people-carry"
   link: "dynamics/"
   color: "black"
 
@@ -14,7 +14,7 @@
   color: "black"
 
 - name: "Waves"
-  icon: "fas fa-satellite-dish"
+  icon: "fas fa-wave-square"
   link: "waves/"
   color: "black"
 
@@ -28,7 +28,7 @@
   link: "about-us/"
   color: "black"
 
-# - name: "IB Cheatsheet"
-#   icon: "fas fa-user-graduate"
-#   link: "cheatsheet/"
-#   color: "black"
+- name: "Formulas"
+  icon: "fas fa-square-root-alt"
+  link: "formulas/"
+  color: "black"

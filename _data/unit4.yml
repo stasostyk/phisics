@@ -1,0 +1,60 @@
+- f: \Delta x = x_0 \cos (\omega t)
+  n: Displacement of an oscillating object.
+
+- f: \omega = 2 \pi f
+  n: Speed of wave.
+
+- f: \omega^2 = \frac{k}{m}
+  n: Speed of wave in an elastic string.
+
+- f: T = \frac{1}{f} \rightarrow f = \frac{1}{T}
+  n: Relationship between frequency and time.
+
+- f: a = -{\omega}^2x
+  n: Current acceleration.
+
+- f: a_{max} = -{\omega}x_0
+  n: Maximum acceleration.
+
+- f: v_{max} = \omega x_0
+  n: Maximum velocity.
+
+- f: v(t) = -x_0 \omega \sin (\omega t)
+  n: Velocity as a function of time.
+
+- f: a(t) = x_0 \cos (\omega t)
+  n: Acceleration as a function of time.
+
+- f: KE(t) = \frac{1}{2}mx_0^2 {\omega}^2 \sin (\omega t)
+  n: Kinetic energy as a function of time.
+
+- f: PE_{elastic}(t) = \frac{1}{2}kx_0^2 {\cos}^2 (\omega t)
+  n: Potential elastic energy as a function of time.
+
+
+- f: \lvert \Delta d \rvert = n \lambda
+  n: Path difference for constructive interference of double slit.
+
+- f: \lvert \Delta d \rvert = (n+\frac{1}{2}) \lambda
+  n: Path difference for destructive interference of double slit.
+
+- f: d \sin \theta = n \lambda
+  n: Local maximum of intensity acting on a wall after a double slit.
+
+- f: \frac{S}{D} = \frac{n \lambda}{d}
+  n: Small angle approximation derived from previous formula.
+
+- f: \theta_i = \theta_r
+  n: Angle of incident is equal to angle of reflection.
+
+- f: n_1 \sin \theta_i = n_2 \sin \theta_r
+  n: Snell's law for angle of refraction.
+
+- f: \sin \theta_c = \frac{n_2}{n_1}
+  n: Snell's law when $\theta_r = 90°$ for critical angle of refraction.
+
+- f: n = \frac{c}{v}
+  n: Refractive index of a wave. Higher index means wave travels slower in a given medium.
+
+- f: b \sin \theta = \frac{n \lambda}{b}
+  n: Destructive interference in a single slit.

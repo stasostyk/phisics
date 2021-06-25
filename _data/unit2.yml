@@ -1,0 +1,74 @@
+- f: a = \frac{F_{net}}{m}
+  n: Newton's second law.
+
+- f: F_g = mg
+  n: This is weight. 'g' is the gravitational constant, which is why you weigh differently on the moon!
+
+- f: F_N = -mg
+  n: Normal force, acts perpendicular to weight. Example, exerted by table on book to keep it on the table.
+
+- f: F_f = \mu F_N
+  n: Friction force, acts opposite to motion of an object.
+
+- f: F_s = -k \Delta x
+  n: Spring force which is proportional to negative displacement of an object since it tries to reach equilibrium.
+
+- f: \mu_s = \tan \theta
+  n: Find static coefficient of friction of an object on an inclined plane, theta being the angle when the object begins to slide.
+
+- f: F_x = mg \sin \theta
+  n: Force parralel to incline plane, moving the object.
+
+- f: F_y = mg \cos \theta
+  n: Force perpendicular to incline plane.
+
+- f: F_{on1by2} = -F{on2by1}
+  n: Newton's third law of motion.
+
+- f: W = F \Delta d
+  n: Work done by an object.
+
+- f: W = F \Delta d \cos \theta
+  n: Work done by an object force is acting at an angle.
+
+- f: F_T = ma = Ma
+  n: Frictionless pulley with two objects attached on a string.
+
+- f: a = \frac{M_g - m_g}{m+M}
+  n: Find acceleration of objects on a pulley.
+
+- f: PE_g = mgh
+  n: Potential gravitational energy.
+
+- f: KE = \frac{1}{2}mv^2
+  n: Kinetic energy.
+
+- f: PE_{el} = \frac{1}{2}k \Delta x^2
+  n: Potential elastic energy.
+
+- f: W = \Delta KE + \Delta PE_g + \Delta PE_e
+  n: Change in mechanical energy is work.
+
+- f: h = L(1-\cos \theta)
+  n: Vertical height of pendulum string.
+
+- f: P = \frac{W}{t} = Fv
+  n: Power of an object.
+
+- f: e = \frac{P_{out}}{P_{in}}
+  n: Efficiency of a mechanical system.
+
+- f: p = mv
+  n: Momentum of an object.
+
+- f: F = \frac{\Delta p}{\Delta t} = m(\frac{v_f-v_i}{t})
+  n: Newton's second law.
+
+- f: \Delta p = F \Delta t
+  n: Impulse-momentum formula.
+
+- f: m_1v_{i1} + m_2v_{i2} = m_1v_{f1} + m_2v_{f2}
+  n: Perfectly elastic collisions.
+
+- f: m_1v_1 + m_2v_2 = v_f(m_1+m_2)
+  n: Perfectly inelastic collisions. Objects move at same speed before or after collision.
