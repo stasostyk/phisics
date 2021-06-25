@@ -7,7 +7,7 @@
             "invert(39%) sepia(96%) saturate(1112%) hue-rotate(95deg) brightness(133%) contrast(122%)"];
   var theme = location.search.split('theme=')[1] ? location.search.split('theme=')[1] : "-1";
 
-  if (theme == "-1")
+  if (Number(theme) < 0 || Number(theme) > 6)
     window.location.href = location.protocol + '//' + location.host + location.pathname + "?theme=" + Math.floor(Math.random() * colors.length);
 
   if (Number(theme) <= 3 && Number(theme) >= 0)
