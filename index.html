@@ -25,7 +25,12 @@ layout: default
       <div class="row justify-content-around" id="delay1" style="display: none; ">
         {% for topic in site.data.topics %}
         <div class="col-2 cbox" style="cursor: pointer;" onclick="window.location='{{topic.link}}'+'?theme='+theme;return false;">
-            <i class="{{topic.icon}} icon"></i>
+          {% if topic.name == "Contribute" %}
+          <i class="{{topic.icon}} heart" id="heart"></i>
+          {% else %}
+          <i class="{{topic.icon}} icon" id="ic"></i>
+          {% endif %}
+
             <h1 style="font-size: min(4.3vh, 8vw)">{{topic.name}}</h1>
         </div>
         {% endfor %}

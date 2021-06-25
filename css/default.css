@@ -8,6 +8,28 @@
   animation-iteration-count: infinite;
 }
 
+@keyframes backgroundColorPalette {
+  0% {
+    color: #ee6055;
+  }
+  25% {
+    color: #60d394;
+  }
+  50% {
+    color: #aaf683;
+  }
+  75% {
+    color: #ffd97d;
+  }
+  100% {
+    color: #ff9b85;
+  }
+}
+
+.toggle:hover {
+  animation: backgroundColorPalette 10s infinite alternate, rotating 5s infinite linear;
+}
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -25,9 +47,19 @@
   }
 }
 
-.toggle i {
-  color: black;
+@keyframes pulsating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
+
+
 
 
 #bottr {
@@ -56,6 +88,28 @@
   height: 15vh;
   margin: 4vh;
   max-width: 50vw;
+}
+
+.cbox:hover {
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.05),
+          rgba(0, 0, 0, 0.05)
+        );
+}
+
+.cbox:hover #ic {
+  animation: rotating 5s linear;
+  animation-iteration-count: infinite;
+}
+
+.heart {
+  font-size: 6vh;
+}
+
+.cbox:hover #heart {
+  animation: pulsating 2s linear;
+  animation-iteration-count: infinite;
+  color: red;
 }
 
 .equ {
@@ -212,6 +266,19 @@ hr {
   font-size: 1.8em;
   padding: 10px 20px;
   margin: 30px;
+}
+
+.wave:hover {
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.05),
+          rgba(0, 0, 0, 0.05)
+        );
+}
+
+.wave:hover i {
+  animation: pulsating 2s linear;
+  animation-iteration-count: infinite;
+
 }
 
 .bouncingball {
