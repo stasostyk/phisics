@@ -1,7 +1,7 @@
 # About Phisics
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-![Lines of code](https://img.shields.io/tokei/lines/githbub/stasostyk/phisics)
+![Lines of code](https://img.shields.io/tokei/lines/github/stasostyk/phisics)
 ![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fphisics.tech)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/stasostyk/phisics)
 
