@@ -1,6 +1,9 @@
 # About Phisics
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+![Lines of code](https://img.shields.io/tokei/lines/githbub/stasostyk/phisics)
+![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fphisics.tech)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/stasostyk/phisics)
 
 
 [Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... words... and f0rmu1a5. The best way to experience it is in real life. This project intends on showing those real life phenomena in a controlled, accessible, and predictable environment. Have fun!
