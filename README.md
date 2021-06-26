@@ -1,5 +1,8 @@
 # About Phisics
 
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+
 [Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... words... and f0rmu1a5. The best way to experience it is in real life. This project intends on showing those real life phenomena in a controlled, accessible, and predictable environment. Have fun!
 
 ## <p align="center">700+ Visitors, 3000+ Page Visits, 60+ Countries!</p>
@@ -58,3 +61,13 @@ $ bundle exec jekyll serve // run in root directory
   * Resolution
 
 #### P.S. If you find the easter egg, shhhh!
+
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
