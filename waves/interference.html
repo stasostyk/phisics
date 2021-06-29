@@ -19,6 +19,7 @@ permalink: /waves/interference/
     <script async src="//static.getclicky.com/js"></script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101317900ns.gif" /></p></noscript>
 
+        {% include mathjax.html %}
         {% include theme.html %}
   </head>
   <body>
@@ -38,7 +39,32 @@ permalink: /waves/interference/
         <div class="offset-4 col-4">
           <h3>Click on the two grey blocks to spawn pulses. Modify each pulse's amplitude and wavelengths in the
             sliders above. Once the waves bounce, they reflect in opposite direction due to the wall having higher density.</h3>
-
+        </div>
+      </div>
+      <hr style="height:5px">
+      <br>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <h2><b>What is interference?</b></h2>
+          <h3>
+            When two waves meet, they undergo interference. We describe this as superposition or the Superposition Principle.
+            In essence, the net resultant wave is the addition of the compononent waves.
+          </h3>
+          <br>
+          <h2><i>Constructive interference</i></h2>
+          <h3>The component waves add onto each other to create a larger resultant wave.</h3>
+          <br>
+          <h2><i>Destructive interference</i></h2>
+          <h3>The component waves cancel each other out leaving a smaller resultant wave, or no wave at all.</h3>
+        </div>
+        <div class="col-4">
+          <h2><i>How do we calculate it?</i></h2>
+          <h3>
+            Constructive interference occurs when the path difference between the two coherent waves is a multiple of their wavelength, meaning they perfectly overlap each other.
+            $$\lvert \Delta d \rvert = n \lambda$$
+            Destructive interference occurs when the path different is a multiple of half the wavelength, meaning they cancel each other out perfectly.
+            $$\lvert \Delta d \rvert = (n+\frac{1}{2}) \lambda$$
+          </h3>
         </div>
       </div>
 
