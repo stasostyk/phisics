@@ -22,11 +22,11 @@ function setup() {
   leftAmp.style('width', '80px');
 
   rightAmp = createSlider(-50, 50, -30);
-  rightAmp.position(cnv.position().x+110, cnv.position().y+65);
+  rightAmp.position(cnv.position().x+680, cnv.position().y+35);
   rightAmp.style('width', '80px');
 
   leftWl = createSlider(1, 100, 50);
-  leftWl.position(cnv.position().x+680, cnv.position().y+35);
+  leftWl.position(cnv.position().x+110, cnv.position().y+65);
   leftWl.style('width', '80px');
 
   rightWl = createSlider(1, 100, 50);
