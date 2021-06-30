@@ -32,6 +32,10 @@ function setup() {
   rightWl = createSlider(1, 100, 50);
   rightWl.position(cnv.position().x+680, cnv.position().y+65);
   rightWl.style('width', '80px');
+
+  clearB = createButton("Reset Simulation");
+  clearB.position(cnv.position().x+10, cnv.position().y+height-40);
+  clearB.mousePressed(reset);
 }
 
 function draw() {
@@ -62,11 +66,6 @@ function draw() {
   text("-50 px             50 px",680,62);
   text("1 px             100 px",680,92);
   pop();
-
-
-  clearB = createButton("Reset Simulation");
-  clearB.position(cnv.position().x+10, cnv.position().y+height-40);
-  clearB.mousePressed(reset);
 
   lp.move(rp);
   rp.move(lp);
