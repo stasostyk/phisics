@@ -1,3 +1,8 @@
+html,
+body {
+    overscroll-behavior-y: contain;
+}
+
 .toggle {
   bottom: 60px;
   right: 50px;
