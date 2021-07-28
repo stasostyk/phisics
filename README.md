@@ -30,28 +30,33 @@ $ bundle exec jekyll serve // run in root directory
 
 # Content Roadmap
 
-* [x] Kinematics
+* ### Kinematics
   * [ ] 1D Kinematics
   * [x] 2D kinematics
 
-* [x] Dynamics
+* ### Dynamics
   * [x] Inclined planes
   * [x] Collisions
   * [x] Pulleys
   * [x] Calculating Pi
 
-* [x] Thermodynamics
+* ### Thermodynamics
   * [x] Calorimetry
   * [x] Ideal gas
 
-* [x] Waves
-  * [x] Basics intro
-  * [x] Types of waves
-  * [x] Oscillating tube of water
-  * [x] Interference and superposition
+* ### Waves
+  * [x] Basics/Intro
+  * [x] Types of Waves
+  * [x] Oscillating Tube of Water
+  * [x] Interference and Superposition
   * [ ] Reflection
   * [ ] Refraction
   * [ ] Double Slit
+  
+* ### Simple Harmonic Motion
+  * [ ] Uniform Circular Motion
+  * [ ] Mass of a Simple Pendulum
+  * [ ] Mass on a Spring  
 
 #### P.S. If you find any easter eggs, shhhh!
 
