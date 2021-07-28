@@ -28,42 +28,32 @@ $ gem install bundler jekyll
 $ bundle exec jekyll serve // run in root directory
 ```
 
-# Content roadmap
+# Content Roadmap
 
-* Kinematics
-  * 2D kinematics
+* [x] Kinematics
+  * [ ] 1D Kinematics
+  * [x] 2D kinematics
 
-* Dynamics
-  * Inclined planes
-  * Collisions
-  * Pulleys
-  * Calculating Pi
+* [x] Dynamics
+  * [x] Inclined planes
+  * [x] Collisions
+  * [x] Pulleys
+  * [x] Calculating Pi
 
-* Thermodynamics
-  * Calorimetry
-  * Ideal gas
+* [x] Thermodynamics
+  * [x] Calorimetry
+  * [x] Ideal gas
 
-* Waves
-  * Basics intro
-  * Types of waves
-  * Oscillating tube of water
-  * Interference and superposition
+* [x] Waves
+  * [x] Basics intro
+  * [x] Types of waves
+  * [x] Oscillating tube of water
+  * [x] Interference and superposition
+  * [ ] Reflection
+  * [ ] Refraction
+  * [ ] Double Slit
 
-# Upcoming additions
-
-* In kinematics
-  * 1D kinematics
-
-* Circular motion
-
-* In waves
-
-  * Reflection
-  * Doubt slit
-  * Resolution
-
-#### P.S. If you find the easter egg, shhhh!
-
+#### P.S. If you find any easter eggs, shhhh!
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
