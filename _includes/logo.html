@@ -28,6 +28,8 @@
 
 
       scrolled=true;
+
+    
     }
     $(".social-buttons2").css("opacity", '1');
   });
@@ -82,16 +84,116 @@
         "flex-direction": "",
       });
     }
+
+    // ############# BUTTON ANIMATIONS #############
+    
+    // left side
+
+    $("#atom").hover(
+      function () {
+        if(scrolled){
+        $("#atomh5").show(700);}
+      },
+
+      function () {  
+        $("#atomh5").hide(700);
+      });
+    
+    $("#heart").hover(
+      function () {
+        if(scrolled){
+        $("#hearth5").show(700);
+      }},
+
+      function () {  
+        $("#hearth5").hide(700);
+    });
+
+    $("#about").hover(
+      function () {
+        if(scrolled){
+        $("#abouth5").show(700);
+      }},
+
+      function () {  
+        $("#abouth5").hide(700);
+    });
+
+    $("#formulas").hover(
+      function () {
+        if(scrolled){
+        $("#formulash5").show(700);}
+      },
+
+      function () {  
+        $("#formulash5").hide(700);
+    });
+
+
+    // Right side
+
+    $("#kinematics").hover(
+      function () {
+        if(scrolled){
+        $("#kinematicsh5").show(700);
+      }},
+
+      function () {  
+        $("#kinematicsh5").hide(700);
+      });
+    
+    $("#dynamics").hover(
+      function () {
+        if(scrolled){
+        $("#dynamicsh5").show(700);
+      }},
+
+      function () {  
+        $("#dynamicsh5").hide(700);
+      });
+    
+    $("#thermal").hover(
+      function () {
+        if(scrolled){
+        $("#thermalh5").show(700);
+      }},
+
+      function () {  
+        $("#thermalh5").hide(700);
+      });
+    
+    
+    $("#waves").hover(
+      function () {
+        if(scrolled){
+        $("#wavesh5").show(700);
+      }},
+
+      function () {  
+        $("#wavesh5").hide(700);
+      });
+
+
   });
 </script>
 
 <div class="row justify-content-center" id="navbar" style="position: fixed; z-index:999; text-align: center">
   <div class="col-4 my-auto">
     <div class="social-buttons2" id="first">
-          <a href="/" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-atom"></i></a>
-          <a href="/contribute" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-heart"></i></a>
-          <a href="/about-us" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-question"></i></a>
-          <a href="/formulas" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-square-root-alt"></i></a>
+      <a id="atom" href="/" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-atom"></i></a>
+      <h5 id="atomh5" style="display: none;">Home</h5>
+
+      <a id="heart" href="/contribute" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-heart"></i></a>
+      <h5 id="hearth5" style="display: none;">Contribute</h5>
+
+      
+      <a id="about" href="/about-us" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-question"></i></a>
+      <h5 id="abouth5" style="display: none;">About Us</h5>
+
+
+      <a id="formulas" href="/formulas" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-square-root-alt"></i></a>
+      <h5 id="formulash5" style="display: none;">Formulas</h5>
+    
     </div>
     <hr id="line1" style="text-align:left; width: 100%; height: 5px; opacity: 1">
   </div>
@@ -100,11 +202,28 @@
     </div>
     <div class="col-4 my-auto">
       <div class="social-buttons2" id="second">
-        <a href="/kinematics" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-basketball-ball"></i></a>
-        <a href="/dynamics" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-people-carry"></i></a>
-        <a href="/thermal" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-fire"></i></a>
-        <a href="/waves" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-wave-square"></i></a>
+        <a id="kinematics" href="/kinematics" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-basketball-ball"></i></a>
+        <h5 id="kinematicsh5" style="display: none;">Kinematics</h5>
+        
+        <a id="dynamics" href="/dynamics" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-people-carry"></i></a>
+        <h5 id="dynamicsh5" style="display: none;">Dynamics</h5>
+        
+        <a id="thermal" href="/thermal" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-fire"></i></a>
+        <h5 id="thermalh5" style="display: none;">Thermal</h5>
+        
+        <a id="waves" href="/waves" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-wave-square"></i></a>
+        <h5 id="wavesh5" style="display: none;">Waves</h5>
+      
       </div>
       <hr id="line2" style="text-align:left; width: 100%; height: 5px; opacity: 1">
     </div>
 </div>
+
+
+<!-- User-friendly effects -->
+
+<script>
+    
+
+  
+</script>
