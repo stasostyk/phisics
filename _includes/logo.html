@@ -28,6 +28,8 @@
 
 
       scrolled=true;
+
+    
     }
     $(".social-buttons2").css("opacity", '1');
   });
@@ -82,6 +84,96 @@
         "flex-direction": "",
       });
     }
+
+    // ############# BUTTON ANIMATIONS #############
+    
+    // left side
+
+    $("#atom").hover(
+      function () {
+        if(scrolled){
+        $("#atomh5").show(700);}
+      },
+
+      function () {  
+        $("#atomh5").hide(700);
+      });
+    
+    $("#heart").hover(
+      function () {
+        if(scrolled){
+        $("#hearth5").show(700);
+      }},
+
+      function () {  
+        $("#hearth5").hide(700);
+    });
+
+    $("#about").hover(
+      function () {
+        if(scrolled){
+        $("#abouth5").show(700);
+      }},
+
+      function () {  
+        $("#abouth5").hide(700);
+    });
+
+    $("#formulas").hover(
+      function () {
+        if(scrolled){
+        $("#formulash5").show(700);}
+      },
+
+      function () {  
+        $("#formulash5").hide(700);
+    });
+
+
+    // Right side
+
+    $("#kinematics").hover(
+      function () {
+        if(scrolled){
+        $("#kinematicsh5").show(700);
+      }},
+
+      function () {  
+        $("#kinematicsh5").hide(700);
+      });
+    
+    $("#dynamics").hover(
+      function () {
+        if(scrolled){
+        $("#dynamicsh5").show(700);
+      }},
+
+      function () {  
+        $("#dynamicsh5").hide(700);
+      });
+    
+    $("#thermal").hover(
+      function () {
+        if(scrolled){
+        $("#thermalh5").show(700);
+      }},
+
+      function () {  
+        $("#thermalh5").hide(700);
+      });
+    
+    
+    $("#waves").hover(
+      function () {
+        if(scrolled){
+        $("#wavesh5").show(700);
+      }},
+
+      function () {  
+        $("#wavesh5").hide(700);
+      });
+
+
   });
 </script>
 
@@ -131,83 +223,7 @@
 <!-- User-friendly effects -->
 
 <script>
-    // left side
-
-  $("#atom").hover(
-    function () {
-      $("#atomh5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#atomh5").hide(700);
-    });
-  
-  $("#heart").hover(
-    function () {
-      $("#hearth5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#hearth5").hide(700);
-  });
-
-  $("#about").hover(
-    function () {
-      $("#abouth5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#abouth5").hide(700);
-  });
-
-  $("#formulas").hover(
-    function () {
-      $("#formulash5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#formulash5").hide(700);
-  });
-
-
-  // Right side
-
-  $("#kinematics").hover(
-    function () {
-      $("#kinematicsh5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#kinematicsh5").hide(700);
-    });
-  
-  $("#dynamics").hover(
-    function () {
-      $("#dynamicsh5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#dynamicsh5").hide(700);
-    });
-  
-  $("#thermal").hover(
-    function () {
-      $("#thermalh5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#thermalh5").hide(700);
-    });
-  
-  
-  $("#waves").hover(
-    function () {
-      $("#wavesh5").show(700).delay(1000);
-    },
-
-    function () {  
-      $("#wavesh5").hide(700);
-    });
+    
 
   
 </script>
