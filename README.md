@@ -7,7 +7,7 @@
 
 [Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... words... and f0rmu1a5. The best way to experience it is in real life. This project intends on showing those real life phenomena in a controlled, accessible, and predictable environment. Have fun!
 
-## <p align="center">2,000+ Visitors, 10,000+ Page Visits, 90+ Countries!</p>
+## <p align="center">Over 10,000 unique visitors from 114 countries!</p>
 
 # Contribution
 ## Framework
