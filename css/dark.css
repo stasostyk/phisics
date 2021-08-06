@@ -91,7 +91,8 @@ hr {
   background: linear-gradient(45deg, var(--theme-color), var(--theme-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(2.2);
+
+  font-size: 40px;
 }
 
 .wave {

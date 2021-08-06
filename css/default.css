@@ -214,7 +214,8 @@ a.fill-div {
   background: linear-gradient(45deg, black, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(2.2);
+
+  font-size: 40px;
 }
 
 .rcorners2 {
