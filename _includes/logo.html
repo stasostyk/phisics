@@ -29,7 +29,7 @@
 
       scrolled=true;
 
-    
+
     }
     $(".social-buttons2").css("opacity", '1');
   });
@@ -86,46 +86,50 @@
     }
 
     // ############# BUTTON ANIMATIONS #############
-    
+
     // Buttons on the left side of the page
 
     $("#atom").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#atomh5").show(700);}
       },
 
-      function () {  
+      function () {
         $("#atomh5").hide(700);
       });
-    
+
     $("#heart").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#hearth5").show(700);
       }},
 
-      function () {  
+      function () {
         $("#hearth5").hide(700);
     });
 
     $("#about").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#abouth5").show(700);
       }},
 
-      function () {  
+      function () {
         $("#abouth5").hide(700);
     });
 
     $("#formulas").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#formulash5").show(700);}
       },
 
-      function () {  
+      function () {
         $("#formulash5").hide(700);
     });
 
@@ -135,46 +139,60 @@
     $("#kinematics").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#kinematicsh5").show(700);
       }},
 
-      function () {  
+      function () {
         $("#kinematicsh5").hide(700);
       });
-    
+
     $("#dynamics").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#dynamicsh5").show(700);
       }},
 
-      function () {  
+      function () {
         $("#dynamicsh5").hide(700);
       });
-    
+
     $("#thermal").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#thermalh5").show(700);
       }},
 
-      function () {  
+      function () {
         $("#thermalh5").hide(700);
       });
-    
-    
+
+
     $("#waves").hover(
       function () {
         if(scrolled){
+          stopAllAnims();
         $("#wavesh5").show(700);
       }},
 
-      function () {  
+      function () {
         $("#wavesh5").hide(700);
       });
 
 
   });
+
+  function stopAllAnims() {
+    $('#hearth5').finish()
+    $('#abouth5').finish()
+    $('#formulash5').finish()
+    $('#kinematicsh5').finish()
+    $('#dynamicsh5').finish()
+    $('#thermalh5').finish()
+    $('#wavesh5').finish()
+  }
 </script>
 
 
@@ -187,14 +205,14 @@
       <a id="heart" href="/contribute" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-heart"></i></a>
       <h5 id="hearth5" style="display: none;">Contribute</h5>
 
-      
+
       <a id="about" href="/about-us" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-question"></i></a>
       <h5 id="abouth5" style="display: none;">About Us</h5>
 
 
       <a id="formulas" href="/formulas" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-square-root-alt"></i></a>
       <h5 id="formulash5" style="display: none;">Formulas</h5>
-    
+
     </div>
     <hr id="line1" style="text-align:left; width: 100%; height: 5px; opacity: 1">
   </div>
@@ -205,16 +223,16 @@
       <div class="social-buttons2" id="second">
         <a id="kinematics" href="/kinematics" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-basketball-ball"></i></a>
         <h5 id="kinematicsh5" style="display: none;">Kinematics</h5>
-        
+
         <a id="dynamics" href="/dynamics" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-people-carry"></i></a>
         <h5 id="dynamicsh5" style="display: none;">Dynamics</h5>
-        
+
         <a id="thermal" href="/thermal" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-fire"></i></a>
         <h5 id="thermalh5" style="display: none;">Thermal</h5>
-        
+
         <a id="waves" href="/waves" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-wave-square"></i></a>
         <h5 id="wavesh5" style="display: none;">Waves</h5>
-      
+
       </div>
       <hr id="line2" style="text-align:left; width: 100%; height: 5px; opacity: 1">
     </div>
