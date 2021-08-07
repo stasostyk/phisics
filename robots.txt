@@ -1,1 +1,1 @@
-Sitemap: http://example.com/my_sitemap.xml
+Sitemap: https://phisics.tech/sitemap.xml
