@@ -28,7 +28,7 @@
   link: "about-us/"
   color: "black"
 
-- name: "Formulas"
+- name: "Formulae"
   icon: "fas fa-square-root-alt"
   link: "formulas/"
   color: "black"
