@@ -62,8 +62,8 @@ function draw() {
 
   text("Type of collision: ", 15, 170);
 
-  text("V  = " + block1.v*1000 + " m/s", 450, 75)
-  text("V  = " + block2.v*1000 + " m/s", 450, 105)
+  text("V  = " + round(block1.v*100000)/100 + " m/s", 450, 75)
+  text("V  = " + round(block2.v*100000)/100 + " m/s", 450, 105)
 
   textSize(10);
   text("1", 139, 29);
