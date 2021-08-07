@@ -1,4 +1,3 @@
-let Fa = 0;
 let g = 0.5;
 let muK = 0.2;
 let muS = muK*2;
@@ -63,7 +62,7 @@ function draw() {
   text("Fgy", 0, m*g*cos(ang)*10-10);
   text("Ff", fric*-30-20, -10);
   text("Fn", 5, m*g*cos(ang)*-10-20);
-  text("Fa + Fgx", m*g*sin(ang)*20, -10);
+  text("Fgx", m*g*sin(ang)*20, -10);
 
   var base = createVector(0, -w/2);
   drawArrow(base, createVector(0, m*g*cos(ang)*10), 'black');
@@ -95,14 +94,14 @@ function draw() {
 }
 
 function getAccel() {
-  return (Fa - getFf() + m*g*sin(ang))/m;
+  return (-getFf() + m*g*sin(ang))/m;
 }
 
 function getFf() {
-  if (abs(Fa + m*g*sin(ang)) <= m*g*cos(ang)*muS) {
-    return m*g*sin(ang) + Fa;
+  if (abs(m*g*sin(ang)) <= m*g*cos(ang)*muS) {
+    return m*g*sin(ang);
   }
-  return m*g*cos(ang)*muK + Fa;
+  return m*g*cos(ang)*muK;
 }
 
 function drawArrow(base, vec, myColor) {
