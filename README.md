@@ -1,34 +1,50 @@
-# About Phisics
+# About Phisics.tech, the interactive physics website
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![Lines of code](https://img.shields.io/tokei/lines/github/stasostyk/phisics)
 ![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fphisics.tech)
 
 
-[Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... words... and f0rmu1a5. The best way to experience it is in real life. This project intends on showing those real life phenomena in a controlled, accessible, and predictable environment. Have fun!
+[Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... laws... and f0rmu1a5. The best way to experience phyiscs is to visualize it. This project intends on showing those real life phenomena in an interactive, controlled, and understandable environment. Have fun! 
 
 ## <p align="center">Over 10,000 unique visitors from 114 countries!</p>
 
-# Contribution
-## Framework
+## Awards
+* [Refdesk "Site of the Day"](https://refdesk.com/sotd-arch.html) (thank you so much to whomever submitted the post and to refdesk for accepting it!)
+* Removed by mods on r/webdev (that's an accomplishment if you ask me!)
+
+## Frameworks
 * The website runs on [Jekyll](https://jekyllrb.com/)
-* Simulations run on [p5.js](https://p5js.org/) using javascript.
-* Styling done with [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
+* Simulations run on [P5.js](https://p5js.org/) using javascript.
+* Styling done with [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
 * Math formatting done with [MathJax](https://www.mathjax.org/#gettingstarted)
 * All icons from [FontAwesome](https://fontawesome.com/)
 
 ## How to contribute
 
-Most helpful contributions would be adding more simulations. You can easily develop them on p5's online editor, [editor.p5js.org](https://editor.p5js.org/). Preferably just create a pull request with the p5.js file and I will incorporate it into the website as a whole. Include explanations and formulas too if you want!
+I am open to any helpful contribution! If you want to add a simulation or edit one, I recommend using the p5js online editor at [editor.p5js.org](https://editor.p5js.org/). Note: If you only want to contribute a p5js simulation, go for it and I will include it in the actual website! 
 
-If you want to run the webpage locally on your computer, you need to use [Jekyll](https://jekyllrb.com/). For this, install ruby, then run the project.
+## Comments, advise, corrections, or partnerships?
+I would love to hear from you by email at <a href="mailto:s.ostyks@gmail.com">s.ostyks@gmail.com</a>. You can reach out in English, Polish, or Spanish.
 
+## Hosting the website locally
+
+1. Download the [ruby programming language](https://www.ruby-lang.org/en/documentation/installation/)
+
+2. In your terminal, download [Jekyll](https://jekyllrb.com/) by running the following code
 ```
-$ gem install bundler jekyll
-$ bundle exec jekyll serve // run in root directory
+~ $ gem install bundler jekyll
 ```
 
-# Content Roadmap
+3. In your terminal, navigate to the root directory of this project (download it first!) and run
+```
+~/instafact $ bundle exec jekyll serve
+```
+
+4. In your browser, open `localhost:4000` or `127.0.0.1:4000`
+
+
+## Simulations roadmap
 
 * ### Kinematics
   * [ ] 1D Kinematics
