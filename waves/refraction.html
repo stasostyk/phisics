@@ -1,0 +1,148 @@
+---
+permalink: /waves/refraction/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Objects on Inclined Planes Physics Simulation by Phisics</title>
+    <meta name="description" content="Physics simulation of objects on an inclined plane. Visualize forces, movement, and
+    friction by Phisics.">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/default.css">
+    <script src="https://kit.fontawesome.com/38cfdf5413.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+
+    {% include tracking.html %}
+
+    {% include theme.html %}
+    {% include mathjax.html %}
+  </head>
+  <body style="padding-bottom: 200px">
+    <div class="container-fluid" style="text-align: center;">
+      {% include logo.html %}
+      <div style="height: 300px;">
+
+      </div>
+
+      <div id="cnv" style="display: block; margin: auto; height: 510px; width: 510px; border: black solid 5px;">
+      </div>
+
+      <br>
+      <h2>Law of Refraction & Snell's Law</h2>
+      <br>
+      <div class="row">
+        <div class="offset-2 col-8">
+          <hr style="height:5px;  justify-content: center; opacity: 0.9">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4 my-auto">
+          <h3><strong>What is happening?</strong></h3>
+          <br>
+          <h3>When wavefronts go through a change in media, eg. light going from air to water, they seem to <i>bend</i>. In physics, we call
+          this refraction, which refers to the change in angle of wave ray when changing its medium. </h3>
+          <br>
+          <h3>We see this phenomenon all around us. Take for example a straw in water. When you look at it, it seems as if the straw is bending in a different direction.
+          This is because the light reflecting off of the straw is refracting when it changes from water, which the straw is in, to air, where our eyes are. Cool optical illusion, huh?</h3>
+        </div>
+          <div class="col-3 my-auto" style="text-align: center">
+            <img src="../../assets/straw.png" style="width: 100%; height: 100%" alt="[Straw Bend]" class="svg-color">
+
+            </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-4 my-auto">
+          <h4>
+            $$n = \frac{c}{v}$$
+            $$n_1 \sin \theta = n_2 \sin \alpha$$
+            $$\therefore \frac{\sin \theta}{\sin \alpha} = \frac{v_1}{v_2} = \frac{n_2}{n_1}$$
+            $$\theta_{incident} = \theta_{reflected}$$
+            $$\theta_{critical} = \frac{n_2}{n_1}$$
+          </h4>
+        </div>
+        <div class="col-4 my-auto">
+          <h3><strong>How do we calculate it?</strong></h3>
+          <br>
+          <h3>Snell's Law consists of two variables which we need to define. </h3>
+          <br>
+          <h3>The angle of the wave, which we can measure
+            between the wave rays and a perpendicular line to the barrier between the media, known as
+            the 'normal line'. Let's define the incident angle as <i>θ</i> and refracted angle as <i>α</i>.
+          </h3>
+          <br>
+          <h3>The refractive index of the medium, <i>n</i>. Let's make <i>1</i> refer to the upper medium and <i>2</i> to the lower.</h3>
+          <br>
+          <h3>Snell's Law states a relationship between the <i>sin</i> of the angles and the refractive index of the media. This relationship is shown on the left.
+          To understand how it is derived, refer to the below section.</h3>
+          <br>
+          <h3>Importantly, the wave bends because it has lower velocity in a more dense medium (intuitively, imagine walking through mud- its slower). We can relate the
+          velocities of the wavefronts by substituting the definition of the refractive index, demonstrated on the left.</h3>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <h3><strong>But... how does light just bend?</strong></h3>
+          <br>
+          <h3><i>Warning: Bear with me, and it might just make sense...</i></h3>
+          <br>
+          <h3>It's weird, right? Why would light bend? According to Fermat's principle,
+          the path taken by a ray between two points is the path with least distance. That made no sense to me, as if waves magically knew the shortest path in any situation, suddenly solving the
+          travelling salesman problem. </h3>
+          <br>
+          <h3>Instead, let's think of Fermat's principle as a <i>happy little incident.</i></h3>
+          <br>
+          <h3>Refer to the picture on the right. Imagine a wavefront as a line, perpendicular to the direction of the ray, approaching water. Since it's at an angle,
+          the bottom of the <i>line</i> (wavefront) will reach the water first. Therefore, that part will move slower because its in water. However, the top of the wavefront
+          is still in air, therefore moving faster. By the time that the entire wavefront reaches the water, its bended because the bottom-side of the wave moved slower than the top.  </h3>
+          <br>
+          <h3><strong>To understand this, think of a <i>car</i>. When it's left wheels slow down, the car <i>bends</i> to the left. In the case of waves, the left wheels would move slower
+          because they're underwater while the right wheels are not yet. </strong></h3>
+          <hr>
+          <h3><i>This explanation is entirely based on <a href="https://www.askamathematician.com/2011/08/q-why-does-light-choose-the-path-of-least-time/">this physics post</a>. Please refer to it for a more indepth explanation, and credits to 'The Physicist' for such an intuitive explanation!</i></h3>
+        </div>
+        <div class="col-3 my-auto" style="text-align: center">
+          <img src="../../assets/bend.png" style="width: 100%; height: 100%" alt="[Bend Calculation]" class="svg-color">
+          <p><a href="https://www.askamathematician.com/2011/08/q-why-does-light-choose-the-path-of-least-time/">Credits to 'The Physicist'</a></p>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-4 my-auto">
+          <h4>
+            $$\theta_{incident} = \theta_{reflected}$$
+            $$\theta_{critical} = \frac{n_2}{n_1}$$
+          </h4>
+        </div>
+        <div class="col-4 my-auto">
+          <h3><strong>Total Internal Reflection</strong></h3>
+          <br>
+          <h3>Set the upper medium to a dense material, like diamonds. Then the lower to air. Now, modify the angle
+          until the waveray bounces back, as if there was a barrier between the two media. Weird, right?</h3>
+          <br>
+          <h3>This is known as total internal reflection, which happens when the angle of refraction reaches 90°. The incident angle at this point is known
+          as the critical angle, which once reached, results in total internal reflection. This means that all the waves are reflected at an equal but opposite angle. No more refraction!</h3>
+          <br>
+          <h3>This is a phenomenon which is really cool to see (watch some YouTube videos with lasers!), but is also how your internet travels in fiber optic cables. The light waves inside the fiber
+          optic cables undergo total internal reflection and thus travel across the cables from your house to your Internet Service Provider. </h3>
+          <hr>
+          <h3>Random fact about me, this is my favourite phenomenon in physics.</h3>
+        </div>
+      </div>
+
+</div>
+
+    <script src="../refraction.js"></script>
+  </body>
+</html>
