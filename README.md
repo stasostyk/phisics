@@ -5,7 +5,7 @@
 ![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fphisics.tech)
 
 
-[Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... laws... and f0rmu1a5. The best way to experience phyiscs is to visualize it. This project intends on showing those real life phenomena in an interactive, controlled, and understandable environment. Have fun! 
+[Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... laws... and f0rmu1a5. The best way to experience phyiscs is to visualize it. This project intends on showing those real life phenomena in an interactive, controlled, and understandable environment. Have fun!
 
 ## <p align="center">Over 10,000 unique visitors from 114 countries!</p>
 
@@ -22,7 +22,7 @@
 
 ## How to contribute
 
-I am open to any helpful contribution! If you want to add a simulation or edit one, I recommend using the p5js online editor at [editor.p5js.org](https://editor.p5js.org/). Note: If you only want to contribute a p5js simulation, go for it and I will include it in the actual website! 
+I am open to any helpful contribution! If you want to add a simulation or edit one, I recommend using the p5js online editor at [editor.p5js.org](https://editor.p5js.org/). Note: If you only want to contribute a p5js simulation, go for it and I will include it in the actual website!
 
 ## Comments, advise, corrections, or partnerships?
 I would love to hear from you by email at <a href="mailto:s.ostyks@gmail.com">s.ostyks@gmail.com</a>. You can reach out in English, Polish, or Spanish.
@@ -65,14 +65,9 @@ I would love to hear from you by email at <a href="mailto:s.ostyks@gmail.com">s.
   * [x] Types of Waves
   * [x] Oscillating Tube of Water
   * [x] Interference and Superposition
-  * [ ] Reflection
-  * [ ] Refraction
+  * [x] Refraction
   * [ ] Double Slit
-  
-* ### Simple Harmonic Motion
-  * [ ] Uniform Circular Motion
-  * [ ] Mass of a Simple Pendulum
-  * [ ] Mass on a Spring  
+
 
 #### P.S. If you find any easter eggs, shhhh!
 
