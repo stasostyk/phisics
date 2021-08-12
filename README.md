@@ -10,8 +10,8 @@
 ## <p align="center">Over 10,000 unique visitors from 114 countries!</p>
 
 ## Awards
-* [Refdesk "Site of the Day"](https://refdesk.com/sotd-arch.html) (thank you so much to whomever submitted the post and to refdesk for accepting it!)
-* Removed by mods on r/webdev (that's an accomplishment if you ask me!)
+* [Refdesk "Site of the Day"](https://refdesk.com/sotd-arch.html)
+* [CSSREEL Nominee Award](https://www.cssreel.com/website/phisics-interactive-physics) 
 
 ## Frameworks
 * The website runs on [Jekyll](https://jekyllrb.com/)
