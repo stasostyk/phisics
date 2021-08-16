@@ -7,11 +7,13 @@
 
 [Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... laws... and f0rmu1a5. The best way to experience phyiscs is to visualize it. This project intends on showing those real life phenomena in an interactive, controlled, and understandable environment. Have fun!
 
-## <p align="center">Over 10,000 unique visitors from 114 countries!</p>
+## <p align="center">Currently being used by 13,000+ students from 118 countries!</p>
 
 ## Awards
 * [Refdesk "Site of the Day"](https://refdesk.com/sotd-arch.html)
-* [CSSREEL Nominee Award](https://www.cssreel.com/website/phisics-interactive-physics) 
+* [CSSREEL Nominee](https://www.cssreel.com/website/phisics-interactive-physics) 
+* [DesignNominees Nominee](https://www.designnominees.com/sites/phisics-interactive-physics)
+* [Featured on Top CSS Gallery!](https://www.topcssgallery.com/gallery/phisics-interactive-physics/)
 
 ## Frameworks
 * The website runs on [Jekyll](https://jekyllrb.com/)
