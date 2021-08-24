@@ -70,6 +70,11 @@ I would love to hear from you by email at <a href="mailto:s.ostyks@gmail.com">s.
   * [x] Refraction
   * [ ] Double Slit
 
+* ### Circular Motion
+ * [ ] Uniform Circular Motion diagram
+ * [ ] Spinning marble in a tube
+ * [ ] Bucket of water on a rope
+
 
 #### P.S. If you find any easter eggs, shhhh!
 
