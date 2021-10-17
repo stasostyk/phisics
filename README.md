@@ -7,7 +7,7 @@
 
 [Phisics.tech](https://phisics.tech) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... laws... and f0rmu1a5. The best way to experience phyiscs is to visualize it. This project intends on showing those real life phenomena in an interactive, controlled, and understandable environment. Have fun!
 
-## <p align="center">Currently being used by 13,000+ students from 118 countries!</p>
+## <p align="center">Currently being used by 15,000+ students from 118 countries!</p>
 
 ## Awards
 * [Refdesk "Site of the Day"](https://refdesk.com/sotd-arch.html)
