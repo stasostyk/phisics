@@ -66,8 +66,8 @@ function draw() {
     PE = 0;
   stroke(0);
   strokeWeight(1);
-  text("KE = " + KE + " J", -65, 50);
-  text("PE = " + PE + " J", -70, 80);
+  text("KE = " + KE + " J", -65, 50+m1*2.5);
+  text("PE = " + PE + " J", -70, 80+m1*2.5);
   pop();
 
   line(125, 50, 125, x+320);
@@ -76,8 +76,8 @@ function draw() {
   strokeWeight(1);
 
   fill(50);
-  rect(100, 320+x, 50);
-  rect(250, 320-x, 50);
+  rect(100-(m1*5)/2, 320+x, 50+m1*5);
+  rect(250-(m2*5)/2, 320-x, 50+m2*5);
 
   push();
   fill(255);
