@@ -124,6 +124,9 @@ function update() {
     if (melted < ini_mi &&mi > melted) {
       mi-=5;
       mw+=5;
+      iPos = height-sqrt(mw)-5;
+      if (iPos + sqrt(mi)/2 > height-5)
+        iPos = height-5-sqrt(mi)/2;
     }
 
     if (ti < round(tf*10)/10)
@@ -138,7 +141,7 @@ function update() {
   } else if (status === 1) {
     iVel += 0.1;
     iPos += iVel;
-    if (iPos >= height-sqrt(wMS.value())) {
+    if (iPos >= height-10-sqrt(mw) || iPos + sqrt(mi)/2 > height-5) {
 
       status = 2;
       let q1 = mi*capIce*(0-ti);
