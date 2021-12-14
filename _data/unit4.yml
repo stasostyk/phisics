@@ -66,4 +66,4 @@
   n: If distance from source increases, intensity decreases by the square of that.
 
 - f: I = I_0 \cos^2 \theta
-  n: Intensity of a polarized light source, maximum at $n\PI, n \in \mathbb{N}.
+  n: Intensity of a polarized light source, maximum at $n\PI, n \in \mathbb{N}$.
