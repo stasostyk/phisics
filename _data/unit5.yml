@@ -1,0 +1,47 @@
+- f: F = k \frac{q_1q_2}{r^2}
+  n: Coulomb's Law. The electric force between two charges, seperated by distance r. What's $k$, you may ask?
+
+- f: k = \frac{1}{4\pi\varepsilon_0} \approx 8.99 Nm^2C^{-2}
+  n: Coulomb constant, defined in terms of the permittivity of free space.
+
+- f: W=Vq
+  n: Work done (energy) by a particle is equal to the voltage times the charge.
+
+- f: E = \frac{F}{q_2} = \frac{q_1}{r^2}
+  n: Electric field strength acting on a charge. Divide by the charge of which you are finding the field strength.
+
+- f: I = nAvq \rightarrow v = \frac{I}{nAq}
+  n: More details on current in terms of the velocity of the electrons, the right formula will come in handy to calculate their speed!
+
+- f: I = \frac{\Delta q}{\Delta t}
+  n: Current is the rate of change of charge (how fast/many electrons are flowing).
+
+- f: V = IR
+  n: Ohm's Law. Beautiful. In an ohmic system, voltage is the product of current times resistance.
+
+- f: \Sigma V = 0
+  n: Kirchhoff's voltage law, sum of all voltages across any loop in a circuit will be 0.
+
+- f: \Sigma I = 0
+  n: Kirchhoff's current law, sum of all current intering a node equals the sum of all current leaving the node.
+
+- f: P = VI = I^2R = \frac{V^2}{R}
+  n: Power dissipated in a source of resistance (joule heating)
+
+- f: R_{total} = \Sigma R = R_1 + R_2 + ...
+  n: Sum resistance when resistors are IN SERIES (same wire).
+
+- f: R_{total} = \frac{1}{\Sigma \frac{1}{R}} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2} + ...}
+  n: Sum reciprocal resistance when resistors are IN PARALLEL (seperated by node).
+
+- f: \delta = \frac{RA}{L} = \frac{R\pi r^2}{L}
+  n: Resistivity equals resistance times cross sectional area of wire divided by length of wire.
+
+- f: \varepsilon = I(R + r) \rightarrow V = \varepsilon - Ir
+  n: Internal resistance of a battery cell, notably the output voltage DECREASES when current INCREASES.
+
+- f: F = qvB \sin \theta
+  n: Lorentz force for a particle in a magnetic field of charge $q$ and velocity $v$, where $\theta$ is the angle to the normal (they will try and trick you with this, force is highest when at a right angle!)
+
+- f: F = BIL \sin \theta
+  n: Lorentz force for wire of length $L$ and current $I$, where $\theta$ is the angle to the normal (they will try and trick you with this, force is highest when at a right angle!)

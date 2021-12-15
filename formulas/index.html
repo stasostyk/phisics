@@ -13,7 +13,7 @@ permalink: /formulas/
     <meta charset="utf-8" />
     <script src="https://kit.fontawesome.com/38cfdf5413.js" crossorigin="anonymous"></script>
     {% include tracking.html %}
-    
+
     {% include theme.html %}
     {% include mathjax.html %}
   </head>
@@ -49,6 +49,7 @@ permalink: /formulas/
           <a href="#d"><i class="fas fa-jedi"></i></a>
           <a href="#t"><i class="fas fa-fire"></i></a>
           <a href="#w"><i class="fas fa-satellite-dish"></i></a>
+          <a href="#e"><i class="fas fa-bolt"></i></a>
         </div>
       </div>
       <hr>
@@ -150,6 +151,32 @@ permalink: /formulas/
           </table>
         </div>
       </div>
+
+      <br>
+
+      <h1 id="e">Unit 5: Electricity and Magnetism</h1>
+      <hr style="height:5px; opacity: 1; width:70%; margin-left: 15%">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <table class="table table-hover table-bordered table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Formula</th>
+                <th scope="col">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in site.data.unit5 %}
+              <tr>
+                <td>$${{item.f}}$$</td>
+                <td>{{item.n}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
