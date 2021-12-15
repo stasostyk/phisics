@@ -58,3 +58,12 @@
 
 - f: b \sin \theta = \frac{n \lambda}{b}
   n: Destructive interference in a single slit.
+
+- f: I \propto A^2
+  n: Intensity is related to the square of the amplitude of the wave.
+
+- f: I \propto x^{-2}
+  n: If distance from source increases, intensity decreases by the square of that.
+
+- f: I = I_0 \cos^2 \theta
+  n: Intensity of a polarized light source, maximum at $n\pi, n \in \mathbb{N}$.
