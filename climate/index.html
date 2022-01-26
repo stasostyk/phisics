@@ -1,0 +1,60 @@
+---
+permalink: climate/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Phisics- Climate Change</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
+    <script src="https://kit.fontawesome.com/38cfdf5413.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+
+    {% include tracking.html %}
+    {% include theme.html %}
+  </head>
+  <body>
+    <div class="container-fluid" style="text-align: center;">
+      {% include logo.html %}
+      <div style="height: 300px;">
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <h1 class="flame"><strong>Climate Change</strong></h1>
+          <h1>Earth is in a state of peril. Let's learn why.</h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-2 wave" style="cursor: pointer;" onclick="window.location='albedo/?theme='+theme;return false;">
+            <i style="font-size:50px" class="far fa-sun"></i>
+            <h1 style="font-size: 2vw">Albedo Effect</h1>
+        </div>
+
+        <div class="col-2 wave" style="cursor: pointer;" onclick="window.location='greenhouse/?theme='+theme;return false;">
+            <i style="font-size:50px" class="fas fa-smog"></i>
+            <h1 style="font-size: 2vw">Greenhouse Effect</h1>
+        </div>
+
+        <div class="col-2 wave" style="cursor: pointer;" onclick="window.location='info/?theme='+theme;return false;">
+            <i style="font-size:50px" class="fas fa-book"></i>
+            <h1 style="font-size: 2vw">Learn More</h1>
+        </div>
+
+        <div class="col-2 wave" style="cursor: pointer;" onclick="window.location='action/?theme='+theme;return false;">
+            <i style="font-size:50px" class="fas fa-fist-raised"></i>
+            <h1 style="font-size: 2vw">Take Action</h1>
+        </div>
+
+      </div>
+
+      <img src="../assets/polar_bear.png" alt="Polar Bear" style="width: 100%;" class="svg-color">
+      <!-- source https://www.reddit.com/r/NatureIsFuckingLit/comments/ksxwx7/polar_bear_taking_a_nap_on_an_iceberg/ -->
+
+
+    </div>
+  </body>
+</html>

@@ -35,6 +35,22 @@ body {
   animation: backgroundColorPalette 10s infinite alternate, rotating 5s infinite linear;
 }
 
+@keyframes flameColor {
+  0% {
+    color: red;
+  }
+  50% {
+    color: orange;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+.flame {
+  animation: flameColor 2s infinite alternate;
+}
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -109,6 +125,16 @@ body {
 
 .heart {
   font-size: 6vh;
+}
+
+.climate {
+  font-size: 6vh;
+  color: green;
+}
+
+.cbox:hover #climate {
+  animation: pulsating 2s linear;
+  animation-iteration-count: infinite;
 }
 
 .cbox:hover #heart {
