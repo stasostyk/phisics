@@ -52,9 +52,10 @@ function draw() {
   fill(250);
   rect(18, 402, 14, -104)
   fill(200,0,0);
-  rect(20, 400, 10, -temp);
   if (temp > 100)
-    temp = 100;
+    rect(20, 400, 10, -100);
+  else
+    rect(20, 400, 10, -temp);
 
   fill(0);
   if (biome.value() == "ocean")
