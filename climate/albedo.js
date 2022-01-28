@@ -74,14 +74,20 @@ function draw() {
   pop();
 
   update();
+  print(photons.length);
 }
 
 function update() {
   t++;
 
   for (let i = 0; i < photons.length; i++) {
-    if (photons[i].update(biome.value()))
+    let status = photons[i].update(biome.value());
+    if (status == 1 || status == 2)
+      total++;
+    if (status == 1)
       temp++;
+
+
     if (photons[i].y < -5)
       photons.splice(i, 1);
   }
@@ -97,7 +103,6 @@ function update() {
     else
       clr = 'red';
     photons.push(new Ball(x, y, clr));
-    total++;
   }
 }
 

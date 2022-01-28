@@ -19,8 +19,8 @@ class Ball {
   }
 
   update(biome) {
-    this.x += this.vx*this.y/150;
-    this.y += this.vy*this.y/150;
+    this.x += this.vx*(this.y+50)/170;
+    this.y += this.vy*(this.y+50)/170;
 
     if (this.y >= 445) {
       let probability = 0;
@@ -36,13 +36,16 @@ class Ball {
       } else if (biome == "snow")
         probability = 70;
       if (Math.floor(Math.random() * 100)+1 <= probability)
+      {
         this.vy *= -1;
+        return 2;
+      }
       else {
         this.y = -10;
-        return true
+        return 1;
       }
     }
-    return false;
+    return 0;
   }
 
   draw() {
