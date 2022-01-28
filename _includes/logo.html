@@ -181,6 +181,17 @@
         $("#wavesh5").hide(700);
       });
 
+      $("#climate").hover(
+        function () {
+          if(scrolled){
+            stopAllAnims();
+          $("#climateh5").show(700);
+        }},
+
+        function () {
+          $("#climateh5").hide(700);
+        });
+
 
   });
 
@@ -192,6 +203,7 @@
     $('#dynamicsh5').finish()
     $('#thermalh5').finish()
     $('#wavesh5').finish()
+    $('#climateh5').finish()
   }
 </script>
 
@@ -232,6 +244,9 @@
 
         <a id="waves" href="/waves" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-wave-square"></i></a>
         <h5 id="wavesh5" style="display: none;">Waves</h5>
+
+        <a id="climate" href="/climate" onclick="location.href=this.href+'?theme='+theme;return false;"><i class="fas fa-leaf"></i></a>
+        <h5 id="climateh5" style="display: none;">Climate</h5>
 
       </div>
       <hr id="line2" style="text-align:left; width: 100%; height: 5px; opacity: 1">
