@@ -18,6 +18,11 @@
   link: "waves/"
   color: "black"
 
+- name: "Climate"
+  icon: "fas fa-leaf"
+  link: "climate/"
+  color: "green"
+
 - name: "Contribute"
   icon: "fas fa-heart"
   link: "contribute/"
