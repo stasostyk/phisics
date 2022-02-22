@@ -7,7 +7,7 @@
 - f:  \Delta d = v_it + \frac{1}{2}at^2
   n:  Quadratic equation for object undergoing acceleration.
 
-- f:  t=\frac{-V_i \pm \sqrt{V_i^2+2a \Delta d}}{at}
+- f:  t=\frac{-V_i \pm \sqrt{V_i^2+2a \Delta d}}{a}
   n:  Quadratic formula, time when projectile hits the ground.
 
 - f:  \Delta d = \frac{v_i+v_f}{2}
