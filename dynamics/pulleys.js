@@ -34,12 +34,12 @@ function draw() {
 
   v += getAccel();
 
-  if (abs(x) > 230) {
+  if (abs(x) > (230-(Math.max(m1,m2)*5))) {
     v = 0;
     if (x > 0)
-      x = 230;
+      x = (230-(Math.max(m1,m2)*5));
     else
-      x = -230;
+      x = -(230-(Math.max(m1,m2)*5));
   }
 
   x += v;
@@ -58,16 +58,16 @@ function draw() {
   translate(115, 300+x);
   rotate(-PI/2);
   var KE = round(0.5*m1*v*v);
-  var PE = round(m1*g*(230-x));
-  if (abs(x) >= 230) {
+  var PE = round(m1*g*((230-(Math.max(m1,m2)*5))-x));
+  if (abs(x) >= (230-(Math.max(m1,m2)*5))) {
     KE = 0;
   }
-  if (x >= 230)
+  if (x >= (230-(Math.max(m1,m2)*5)))
     PE = 0;
   stroke(0);
   strokeWeight(1);
-  text("KE = " + KE + " J", -65, 50+m1*2.5);
-  text("PE = " + PE + " J", -70, 80+m1*2.5);
+  text("KE = " + KE + " J", -60-(m1*5), 50+m1*2.5);
+  text("PE = " + PE + " J", -60-(m1*5), 80+m1*2.5);
   pop();
 
   line(125, 50, 125, x+320);
