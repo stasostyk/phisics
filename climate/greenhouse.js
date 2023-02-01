@@ -80,6 +80,8 @@ function draw() {
 
   push();
   textSize(20);
+
+  // Needs to be called with -1 due to dependency on having non zero values in photon generation
   text("" + (temp-1) + " photons absorbed into thermal heat", 240, 480);
   pop();
 
@@ -97,8 +99,8 @@ function update() {
     if (status == 1)
       temp++;
     if (status == 3) {
-      if (temp <= 0)
-        temp = 1;
+      if (temp <= 1)
+        temp = 2;
       temp--;
     }
 
