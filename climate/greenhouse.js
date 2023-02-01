@@ -97,6 +97,8 @@ function update() {
     if (status == 1)
       temp++;
     if (status == 3) {
+      if (temp < 0)
+        temp = 1;
       temp--;
     }
 
