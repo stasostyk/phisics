@@ -46,7 +46,7 @@ I would love to hear from you by email at <a href="mailto:s.ostyks@gmail.com">s.
 
 3. In your terminal, navigate to the root directory of this project (download it first!) and run
 ```
-~/instafact $ bundle exec jekyll serve
+~/phisics $ bundle exec jekyll serve
 ```
 
 4. In your browser, open `localhost:4000` or `127.0.0.1:4000`
