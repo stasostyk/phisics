@@ -12,14 +12,14 @@ class Photon {
     this.is_leaving = false;
   }
 
-  update(probability) {
+  update(probability, total) {
     if (this.is_leaving) {
       this.is_leaving = false;
       return 3;
     }
 
     if (this.timer > 0) {
-      if (this.timer == 1)
+      if (this.timer <= 1 && total > 0)
         this.is_leaving = true;
       this.timer--;
       return 0;
