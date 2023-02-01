@@ -19,7 +19,7 @@ class Photon {
     }
 
     if (this.timer > 0) {
-      if (this.timer <= 1 && total > -1)
+      if (this.timer <= 1 && total > 0)
         this.is_leaving = true;
       this.timer--;
       return 0;
