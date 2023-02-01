@@ -91,7 +91,7 @@ function update() {
   t++;
 
   for (let i = 0; i < photons.length; i++) {
-    let status = photons[i].update(albedo.value());
+    let status = photons[i].update(albedo.value(), temp);
     if (status == 1 || status == 2)
       total++;
     if (status == 1)
