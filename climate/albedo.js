@@ -81,7 +81,7 @@ function update() {
   t++;
 
   for (let i = 0; i < photons.length; i++) {
-    let status = photons[i].update(biome.value());
+    let status = photons[i].update(biome.value(), 1);
     if (status == 1 || status == 2)
       total++;
     if (status == 1)
