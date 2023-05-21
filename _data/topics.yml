@@ -37,3 +37,8 @@
   icon: "fas fa-square-root-alt"
   link: "formulas/"
   color: "black"
+
+- name: "Support Us"
+  icon: "fas fa-hand-holding-usd"
+  link: "support/"
+  color: "black"
