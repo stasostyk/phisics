@@ -5,7 +5,7 @@ body {
 
 .toggle {
   bottom: 60px;
-  right: 50px;
+  left: 50px;
   position: fixed;
   font-size: 50px;
 
@@ -85,7 +85,7 @@ body {
 
 #bottr {
   bottom: 15px;
-  right:45px;
+  left:45px;
   position: fixed;
   font-size: 25px;
 }
