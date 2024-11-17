@@ -1,3 +1,6 @@
+> **Disclaimer: This project has been shut down due to lack of funding and increasing costs for the domain (phisics.tech)**
+
+
 # About Phisics.tech, the interactive physics website
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
