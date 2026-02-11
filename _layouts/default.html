@@ -36,15 +36,15 @@
 
 
     <script src=
-        "js/particles.js">
+        "{{ site.baseurl }}/js/particles.js">
     </script>
     <script>
       var theme = location.search.split('theme=')[1] ? location.search.split('theme=')[1] : '0';
 
       if ((Number(theme) <= 3 && Number(theme) >= 0) || theme == "5")
-        document.write('<script src="/js/dark.js"><\/script>');
+        document.write('<script src="{{ site.baseurl }}/js/dark.js"><\/script>');
       else
-        document.write('<script src="/js/app.js"><\/script>');
+        document.write('<script src="{{ site.baseurl }}/js/app.js"><\/script>');
     </script>
 
   </body>

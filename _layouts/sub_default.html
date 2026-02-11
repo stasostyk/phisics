@@ -29,9 +29,9 @@
     <script>
 
       if ((Number(theme) <= 3 && Number(theme) >= 0) || theme == "5")
-        document.write('<script src="/js/dark.js"><\/script>');
+        document.write('<script src="{{ site.baseurl }}/js/dark.js"><\/script>');
       else
-        document.write('<script src="/js/app.js"><\/script>');
+        document.write('<script src="{{ site.baseurl }}/js/app.js"><\/script>');
     </script>
 
   </body>
