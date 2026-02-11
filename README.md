@@ -1,14 +1,14 @@
-> **Disclaimer: This project has been shut down due to lack of funding and increasing costs for the domain (phisics.tech)**
+> **Disclaimer: This project has been shut down, and is no longer available at its original URL (phisics.tech). You can still find it at [stasostyk.github.io/phisics](https://stasostyk.github.io/phisics)**
 
 
-# About Phisics.tech, the interactive physics website
+# About Phisics, the interactive physics website
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![Lines of code](https://img.shields.io/tokei/lines/github/stasostyk/phisics)
 ![Website](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fstasostyk.github.io/phisics)
 
 
-[Phisics.tech](https://stasostyk.github.io/phisics) is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... laws... and f0rmu1a5. The best way to experience phyiscs is to visualize it. This project intends on showing those real life phenomena in an interactive, controlled, and understandable environment. Have fun!
+Phisics is a website with the aim of teaching physics through simulations. Physics is often hard to conceptualize with just long... laws... and f0rmu1a5. The best way to experience phyiscs is to visualize it. This project intends on showing those real life phenomena in an interactive, controlled, and understandable environment. Have fun!
 
 ## <p align="center">Currently being used by 27,000+ students from 132 countries!</p>
 
@@ -55,37 +55,6 @@ I would love to hear from you by email at <a href="mailto:s.ostyks@gmail.com">s.
 4. In your browser, open `localhost:4000` or `127.0.0.1:4000`
 
 
-## Simulations roadmap
-
-* ### Kinematics
-  * [ ] 1D Kinematics
-  * [x] 2D kinematics
-
-* ### Dynamics
-  * [x] Inclined planes
-  * [x] Collisions
-  * [x] Pulleys
-  * [x] Calculating Pi
-
-* ### Thermodynamics
-  * [x] Calorimetry
-  * [x] Ideal gas
-
-* ### Waves
-  * [x] Basics/Intro
-  * [x] Types of Waves
-  * [x] Oscillating Tube of Water
-  * [x] Interference and Superposition
-  * [x] Refraction
-  * [ ] Double Slit
-
-* ### Circular Motion
- * [ ] Uniform Circular Motion diagram
- * [ ] Spinning marble in a tube
- * [ ] Bucket of water on a rope
-
-
-#### P.S. If you find any easter eggs, shhhh!
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa] under its owner, Stanislaw Ostyk-Narbutt.
