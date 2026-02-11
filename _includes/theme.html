@@ -13,9 +13,9 @@
     window.location.href = location.protocol + '//' + location.host + location.pathname + "?theme=" + Math.floor(Math.random() * colors.length);
 
   if (Number(theme) <= 3 && Number(theme) >= 0)
-    document.write('<link rel="stylesheet" type="text/css" href="/{{ site.baseurl }}/css/dark.css" />');
+    document.write('<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/dark.css" />');
   else if (theme == "5")
-    document.write('<link rel="stylesheet" type="text/css" href="/{{ site.baseurl }}/css/rainbow.css" />');
+    document.write('<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/rainbow.css" />');
 
   if (Number(theme) <= 3 && Number(theme) >= 0){
     console.log(colors[Number(theme)]);
