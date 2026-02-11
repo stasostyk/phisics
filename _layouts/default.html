@@ -9,23 +9,23 @@
 
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/default.css">
 
     <script src="https://kit.fontawesome.com/38cfdf5413.js" crossorigin="anonymous"></script>
 
     <!-- js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="js/particles.js"></script>
+    <script src="{{ base.url }}/js/particles.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     {% include tracking.html %}
 
     <meta property='og:title' content='Phisics Simulations'/>
-    <meta property='og:image' content='https://phisics.tech/logo.png'/>
+    <meta property='og:image' content='{{ site.url }}/logo.png'/>
     <meta property='og:description' content='Teaching physics with interactive simulations.'/>
-    <meta property='og:url' content='https://phisics.tech'/>
+    <meta property='og:url' content='{{ site.url }}'/>
     <meta property='og:type' content='website'/>
 
   </head>
@@ -36,15 +36,15 @@
 
 
     <script src=
-        "js/particles.js">
+        "{{ site.baseurl }}/js/particles.js">
     </script>
     <script>
       var theme = location.search.split('theme=')[1] ? location.search.split('theme=')[1] : '0';
 
       if ((Number(theme) <= 3 && Number(theme) >= 0) || theme == "5")
-        document.write('<script src="/js/dark.js"><\/script>');
+        document.write('<script src="{{ site.baseurl }}/js/dark.js"><\/script>');
       else
-        document.write('<script src="/js/app.js"><\/script>');
+        document.write('<script src="{{ site.baseurl }}/js/app.js"><\/script>');
     </script>
 
   </body>
